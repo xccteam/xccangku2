@@ -1,0 +1,11 @@
+.tit{
+	color:blue;
+	background: yellow;
+}
+.img{
+	
+	width: 500px;
+	height: 350px;
+	background: url(../img/a.jpg);
+	
+}
