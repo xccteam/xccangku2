@@ -4,10 +4,10 @@ import logo from './img/logo.png'
 
 import './App.css';
 
-class App extends Component {
+class Nl_puc extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Nl_puc">
         {/* 头部信息 */}
         <div id="n_headwrap">
           <header>
@@ -106,4 +106,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Nl_puc;
