@@ -1,6 +1,4 @@
 
-
-
 header,section,#n_bottom,footer{margin: 0 auto;width: 1204px;}
 
 #n_headwrap{
@@ -303,9 +301,11 @@ nav{
 #n_footwarp{
   width: 100%;
   background: #fff;
+  
 }
 footer{
   background: #fff;
+ 
 }
 
 
@@ -380,9 +380,35 @@ footer{
 }
 
 /* 诚信认证 */
+.n_trust{
+  padding: 20px 0;
+  overflow: hidden;
+  margin-left: 32%;
+}
 .n_trust img{
   width: 100px;
   height: 36px;
   float: left;
   margin: 0 3px;
+  vertical-align: top;
+}
+
+.n_license{
+  font-size: 12px;
+  color: #999;
+}
+.n_license li{
+  text-align: center;
+}
+.n_ag{
+  margin-left: 42%;
+}
+.n_ag p{
+  float: left;
+}
+
+.n_ag img{
+  float: left;
+  text-align: center;
+  margin-right: 5px;
 }
