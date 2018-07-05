@@ -31,14 +31,14 @@ ReactDOM.render(<Router>
 		
 
 			<Route path='/nl_puc' component={Nl_puc}>	
-				<IndexRedirect to='/shouye' />	
+				
 				<Route path='/shouye' component={Xc_shouye_lunbotu}></Route>
 				<Route path='/tuangou' component={Xc_tuangou}></Route>
 
 				<IndexRedirect to='/shouye' />
 
 				<Route path='/register' component={Register}></Route>
-				
+				<IndexRedirect to='/shouye' />	
 			
 			
 

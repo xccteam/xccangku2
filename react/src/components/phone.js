@@ -7,6 +7,9 @@ import  icon_b_1 from '../img/icon_b_1.png';
 import icon_b_2 from '../img/icon_b_2.png';
 import icon_b_3 from '../img/icon_b_3.png';
 import ghs from '../img/ghs.png';
+import lunbo1 from '../img/230x414_1.jpg';
+import lunbo2 from '../img/230x414_2.jpg';
+import lunbo3 from '../img/230x414_3.jpg'
 
 
 class Phone extends Component{
@@ -23,10 +26,24 @@ class Phone extends Component{
 						<span></span>
 					</ul>
 				</div>
-				<div className="z_phoneimg">
-					<img src={top_bg} className="big"/>
-					<div className="apple"></div>
-					<div className="andrio"></div>
+				<div className="z_wrap">
+					<div className="z_phoneimg">
+						<img src={top_bg} className="big"/>
+						<div className="apple"></div>
+						<div className="andrio"></div>
+						<div className="z_lunbo">
+							<ul className="z_lunboimg">
+								<li><a href="#"><img src={lunbo1}/></a></li>
+								<li><a href="#"><img src={lunbo2}/></a></li>
+								<li><a href="#"><img src={lunbo3}/></a></li>
+    						</ul>
+							<ul className="z_lunbonum">
+								<li className="num"></li>
+								<li className="num"></li>
+								<li className="num"></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div className="z_phonecon">
 					<div className="z_phonecon_left">
@@ -66,6 +83,9 @@ class Phone extends Component{
 			</div>
 		)
 	}
+	componentDidMount(){
+		
+	}
 }
 $(function () {
 	console.log($("li"))
@@ -76,5 +96,55 @@ $(function () {
 		},500)
 	})
 	
+	$(document).ready(function () {
+		var i = 0;
+		var clone = $(".z_lunboimg li").first().clone();
+		$(".z_lunboimg").append(clone);
+		var size=$(".z_lunboimg li").length;
+		
+		var timer = setInterval(function () {
+			i++;
+			move();
+		}, 2000);
+
+		$(".z_lunbo").hover(function () {
+			clearInterval(timer);
+		}, function () {
+			timer = setInterval(function () {
+				i++;
+				move();
+			}, 2000);
+		})
+
+		$(".z_lunbonum li").hover(function () {
+
+			var index = $(this).index();//获取当前索引值
+			i = index;
+			$(".z_lunbonum").stop().animate({ left: -index * 230 }, 500);
+			$(this).addClass("bg").siblings().removeClass("bg");
+		});
+
+		//移动事件
+		function move() {
+
+			if (i == size) {
+				$(".z_lunboimg").css({ left: 0 });
+				i = 1;
+			}
+			if (i == -1) {
+				$(".z_lunboimg").css({ left: -(size - 1) * 230 });
+				i = size - 2;
+			}
+			$(".z_lunboimg").stop().animate({ left: -i * 230 }, 1000);
+			if (i == size - 1) {
+				$(".num").eq(0).addClass("bg").siblings().removeClass("bg");
+			} else {
+				$(".num").eq(i).addClass("bg").siblings().removeClass("bg");
+			}
+		}
+	})	
+
+	
 })
+
 export default Phone;
