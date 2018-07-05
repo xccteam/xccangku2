@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+import ReactDOM from 'react-dom';
+import logo from '../img/nl_img/logo.png';
+import appCode from '../img/nl_img/appCode.png';
+import weixin_code from '../img/nl_img/weixin_code.png';
+import alipay from '../img/nl_img/alipay.png';
+import chengxin from '../img/nl_img/chengxin.jpg';
+import kexin from '../img/nl_img/kexin.jpg';
+import zhizhao from '../img/nl_img/zhizhao.jpg';
+
+import $ from 'jquery';
+
+
+=======
 // import ReactDOM from 'react-dom';
 import logo from '../img/nl_img/logo.png'
 import {Link} from 'react-router'
+>>>>>>> 62ab1c5fc7b81e9712696164a63d1b88db1ec73a
 import '../css/nl_puc.css';
 
 
@@ -9,12 +24,14 @@ import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
 class Nl_puc extends Component {
+ 
   render() {
     return (
       <div className="Nl_puc">
         {/* 头部信息 */}
         <div id="n_headwrap">
           <header>
+            
             <div className="n_headtop">
                 <div className="n_topl">
                   <span>您好，欢迎来到要出发!</span>
@@ -45,7 +62,7 @@ class Nl_puc extends Component {
                 </div>
             </div>
             <div className="n_headcenter">
-              <a href="" className="log">
+              <a href="/" className="log">
                 <img src={logo}/>
               </a>
               <div className="n_search">
@@ -73,10 +90,14 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
+<<<<<<< HEAD
+                    <a href="#">首页</a>
+=======
                     <Link to={{pathname:'/shouye'}}>首页</Link>
+>>>>>>> 62ab1c5fc7b81e9712696164a63d1b88db1ec73a
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="">每周新品</a>
+                    <a href="#">每周新品</a>
                   </li>
                   <li  className="n_mainmenu">
                     <a href="">好去处</a>
@@ -88,7 +109,7 @@ class Nl_puc extends Component {
                     <Link to={{ pathname: 'phone' }}>手机版下载</Link>
                   </li>
                 </ul>
-                <span className="n_hdindex"></span>
+                {/* <span className="n_hdindex"></span> */}
               </div>
              
             </nav>
@@ -101,16 +122,107 @@ class Nl_puc extends Component {
 
         </section>
         {/* bottom部分 */}
-        <div id="n_bottom">
-          default
+        <div id="n_botwrap">
+          <div id="n_bottom">
+              <ul className="n_botlink">
+                  <li>
+                    <i></i>
+                    <a href="">品质承诺</a>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="">无房退款</a>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="">关注我们</a>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="">帮助中心</a>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="">APP下载</a>
+                  </li>
+              </ul>
+          </div>
         </div>
         {/* footer区域 */}
+        <div id="n_footwarp">
         <footer>
-          dfdsf
+            <div className="n_ftop">
+                <dl className="n_guanyu">
+                  <dt>关于要出发</dt>
+                  <dd>团队介绍</dd>
+                  <dd>招聘信息</dd>
+                  <dd>新闻动态</dd>
+                </dl>
+                <dl className="n_bzzx">
+                  <dt>帮助中心</dt>
+                  <dd>常见问题</dd>
+                  <dd>现金券规则</dd>
+                  <dd>预订说明</dd>
+                  <dd>团购预约</dd>
+                  <dd>支付说明</dd>
+                </dl>
+                <dl className="n_kffw">
+                  <dt>客户服务</dt>
+                  <dd>品质承诺</dd>
+                  <dd>客服及投诉电话 <b>400-118-1166 / 020-62312938</b></dd>
+                  <dd>联系我们</dd>
+                  <dd>广州市政务服务热线 <b>020-12345</b></dd>
+                </dl>
+                <ul className="n_code">
+                    <li>
+                        <a href="">
+                          <img src={appCode}/>
+                        </a>
+                        APP下载
+                    </li>
+                    <li>
+                      <img src={weixin_code}/>
+                      微信公众号
+                    </li>
+                </ul>
+            </div>
+            {/* 友情链接 */}
+            <div className="n_links">
+                <strong>友情链接:</strong>
+                <a href="">如影旅行网</a>
+                <a href="">亲子游记</a>
+                <a href="">内蒙古旅游网 </a>
+                <a href="">四川旅游景点</a>
+                <a href="">深圳旅行社</a>
+                <a href="">深圳景点门票</a>
+                <a href="">厦门户外</a>
+                <a href="">京郊自驾游</a>
+            </div>
+            {/* 网站认证 */}
+            <div className="n_trust">
+              <img src={alipay}/>
+              <img src={zhizhao}/>
+              <img src={chengxin}/>
+              <img src={kexin}/>
+            </div>
         </footer>
+        </div>
+        
       </div>
     );
   }
-}
 
+  
+}
+$(function(){
+  $(".n_mainmenu").click(function(){
+
+    $(this).find("a").css("color","#ff7800")
+    return false
+  })
+
+
+})
+
+  
 export default Nl_puc;
