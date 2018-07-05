@@ -12,15 +12,4 @@ b{font-weight: 100}
 	width:1204px;
 	margin:0 auto;
 }
-i{
-	font-style: normal;
-}
 
-header,footer{
-	width:100%;
-	height:50px;
-	background: pink;
-	color:#fff;
-	font-size: 30px;
-	
-}

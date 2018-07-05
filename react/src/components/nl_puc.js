@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-import logo from '../img/nl_img/logo.png'
+import ReactDOM from 'react-dom';
+import logo from '../img/nl_img/logo.png';
+import $ from 'jquery';
+
 
 import '../css/nl_puc.css';
 
