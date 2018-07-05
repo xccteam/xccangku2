@@ -1,8 +1,5 @@
 
-.Nl_puc{
-  background: #f3f5f6;
-  width: 100%;
-}
+
 
 header,section,#n_bottom,footer{margin: 0 auto;width: 1204px;}
 
@@ -239,6 +236,7 @@ nav{
 
 .n_mainmenu a:hover{
   color: #ff7800;
+  border-bottom: 4px solid  #ff7800; 
 }
 
 .n_hdindex{
@@ -247,6 +245,144 @@ nav{
   background: #ff7800;
   position: absolute;
   bottom: 0;
-  left: 32px;
+  left: 30px;
   overflow: hidden;
+}
+
+/* 底部样式 */
+#n_botwrap{
+  width: 100%;
+  background: #fff;
+}
+#n_bottom{
+  height: 79px;
+  background: #fff;
+  border-top:1px solid #e9eef2;
+  border-bottom:1px solid #e9eef2;
+}
+.n_botlink{
+  height: 47px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.n_botlink>li{
+  height: 47px;
+  line-height: 47px;
+  overflow: hidden;
+}
+
+.n_botlink li a{
+  font-size: 18px;
+  color: #838e93;
+}
+
+.n_botlink li i{
+  font-style: normal;
+  display: block;
+  float: left;
+  height: 47px;
+  width: 47px;
+  margin-right:14px;
+  background: url(../img/nl_img/footer-links.png) no-repeat;
+}
+
+.n_botlink li:nth-of-type(2) i{
+  background-position: -49px 0;
+}
+.n_botlink li:nth-of-type(3) i{
+  background-position: -98px 0;
+}
+.n_botlink li:nth-of-type(4) i{
+  background-position: -147px 0;
+}
+.n_botlink li:nth-of-type(5) i{
+  background-position: -196px 0;
+}
+/* 关于footer部分 */
+#n_footwarp{
+  width: 100%;
+  background: #fff;
+}
+footer{
+  background: #fff;
+}
+
+
+.n_ftop{
+  padding-top:30px;
+  height: 180px;
+}
+
+.n_ftop dl{
+  display: block;
+  float: left;
+  
+}
+.n_ftop dt{
+  display: block;
+  font-size: 16px;
+  color: #666;
+}
+.n_ftop dd{
+  display: block;
+  padding-top: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.n_guanyu{
+  padding-right:70px;
+  border-right:1px solid #f3f5f6;
+}
+
+.n_bzzx{
+  padding:0 70px;
+  border-right:1px solid #f3f5f6;
+}
+.n_kffw{
+  padding:0 70px;
+}
+.n_kffw dd b{
+  color: #000;
+  font-weight: 900;
+}
+.n_code{
+  float: right;
+}
+.n_code li{
+  float: left;
+  margin-left: 20px;
+  color: #666;
+  text-align: center;
+}
+.n_code li img{
+  width: 114px;
+  height: 114px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+/* 友情链接 */
+.n_links{
+  
+  text-align: left;
+  font-size: 12px;
+}
+.n_links strong{
+  font-style: normal;
+  font-weight: 400;
+}
+.n_links a{
+  margin: 0 3px;
+  color: #999999;
+
+}
+
+/* 诚信认证 */
+.n_trust img{
+  width: 100px;
+  height: 36px;
+  float: left;
+  margin: 0 3px;
 }

@@ -1,5 +1,30 @@
+.xc_tuangouwrap{
+	width: 100%;
+	height: 884px;
+	background-color: #f3f5f6;
+}
 .xc_tuangou{
 	width: 1206px;
 	height: 884px;
-	background-color: red;
+	background-color: white;
+	margin-top: 20px;
+}
+.xc_tuangou h1{
+	height: 117px;
+	display: block;
+	line-height: 117px;
+	text-indent: 100px;
+}
+.xc_logoliebiao{
+	padding-left: 80px;
+}
+.xc_logoliebiao div{
+	width: 171px;
+	height: 105px;
+	margin-left: 30px;
+	border: 1px red solid;
+	float: left;
+	margin-top: 30px;
+	overflow: hidden;
+	
 }
