@@ -1,0 +1,28 @@
+.xc_shouye_lunbo{
+	width: 1206px;
+	
+	border: 1px red solid;
+}
+.xc_lunbo{
+	width: 100%;
+	height: 363px;
+	background-color: red;
+}
+.xc_lunbo div:nth-of-type(1){width: 240px;height: 100%; background-color: antiquewhite;float: left;}
+.xc_lunbo div:nth-of-type(2){width: 759px;height: 100%; background-color: deeppink;float: left;}
+.xc_lunbo div:nth-of-type(2){width: 206;height: 100%; background-color: chocolate;float: left;}
+.xc_chengshizhoubiaoyou{
+	width: 100%;
+	height: 787px;
+	background-color: gold;
+}
+.xc_zbjq{
+	width: 100%;
+    height: 397px;
+	background-color: pink;
+}
+.xc_jingxuanzhuti{
+	width: 100%;
+	height: 374px;
+	background-color: aqua;
+}
