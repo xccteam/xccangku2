@@ -1,6 +1,7 @@
 //首页轮播组件
 import React from 'react';
 import '../css/xc-shouye-lunbo.css'
+import '../css/xc-shouye-lunbo.scss'
 class Xc_shouye_lunbotu extends React.Component{
 	constructor(props){
 		super(props)
@@ -10,7 +11,15 @@ class Xc_shouye_lunbotu extends React.Component{
 			
 			<div className='xc_shouye_lunbo'>
 				<div className='xc_lunbo'>
-					<div>left</div>
+					<div>
+						<div>hhh</div>
+						<div>hhh</div>
+						<div>hhh</div>
+						<div>hhh</div>
+						
+						
+						
+					</div>
 					<div>right</div>
 					<div>right</div>
 				</div>

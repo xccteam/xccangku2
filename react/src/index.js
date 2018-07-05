@@ -16,7 +16,7 @@ ReactDOM.render(<Router>
 				
 				<Route path='/shouye' component={Xc_shouye_lunbotu}></Route>
 				<Route path='/tuangou' component={Xc_tuangou}></Route>
-				<IndexRedirect to='/tuangou' />
+				<IndexRedirect to='/shouye' />
 			</Route>
 			<Route path='/register' component={Register}></Route>
 			
