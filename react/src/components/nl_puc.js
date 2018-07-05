@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import ReactDOM from 'react-dom';
 import logo from '../img/nl_img/logo.png';
 import appCode from '../img/nl_img/appCode.png';
@@ -8,15 +7,10 @@ import alipay from '../img/nl_img/alipay.png';
 import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
-
 import $ from 'jquery';
-
-
-=======
 // import ReactDOM from 'react-dom';
-import logo from '../img/nl_img/logo.png'
 import {Link} from 'react-router'
->>>>>>> 62ab1c5fc7b81e9712696164a63d1b88db1ec73a
+
 import '../css/nl_puc.css';
 
 
@@ -90,11 +84,11 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-<<<<<<< HEAD
+
                     <a href="#">首页</a>
-=======
+
                     <Link to={{pathname:'/shouye'}}>首页</Link>
->>>>>>> 62ab1c5fc7b81e9712696164a63d1b88db1ec73a
+
                   </li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
