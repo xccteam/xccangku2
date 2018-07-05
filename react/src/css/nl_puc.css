@@ -52,7 +52,7 @@ header .n_icon{
   position: relative;
 }
 .n_icondz{
-  background: url(img/icon.png) no-repeat;
+  background: url(../img/nl_img/icon.png) no-repeat;
   background-position: 0 0;
   height: 14px;
   width: 11px;
@@ -65,7 +65,7 @@ header .n_icon{
 }
 
 .n_icondlist{
-  background: url(img/icon.png) no-repeat;
+  background: url(../img/nl_img/icon.png) no-repeat;
   background-position:-233px 0;
   height: 4px;
   width: 7px;
@@ -98,7 +98,7 @@ header .n_icon{
 }
 
 .n_clock{
-  background: url(img/icon.png) -14px 0 no-repeat;
+  background: url(../img/nl_img/icon.png) -14px 0 no-repeat;
   height: 15px;
   width: 15px;
   top: -1px;
@@ -106,7 +106,7 @@ header .n_icon{
 }
 
 .n_iconbot{
-  background: url(img/icon.png) -232px 0 no-repeat;
+  background: url(../img/nl_img/icon.png) -232px 0 no-repeat;
   height: 4px;
   width: 7px;
   top: -2px;
@@ -114,7 +114,7 @@ header .n_icon{
 }
 
 .n_phone{
-  background: url(img/icon.png) -32px 0 no-repeat;
+  background: url(../img/nl_img/icon.png) -32px 0 no-repeat;
   height: 15px;
   width: 11px;
   margin-right: 5px;
@@ -140,7 +140,7 @@ header .n_icon{
   overflow: hidden;
 }
 .n_iconsearch{
-  background: url(img/icon.png) -211px -17px no-repeat;
+  background: url(../img/nl_img/icon.png) -211px -17px no-repeat;
   height: 16px;
   width: 16px;
   margin: 0 11px;
@@ -189,14 +189,14 @@ header .n_icon{
 }
 
 .n_iconuse{
-  background: url(img/icon.png) -46px 0 no-repeat;
+  background: url(../img/nl_img/icon.png) -46px 0 no-repeat;
   height: 20px;
   width: 20px;
   margin-right: 7px;
 }
 
 .n_order{
-  background: url(img/icon.png) -69px 0 no-repeat;
+  background: url(../img/nl_img/icon.png) -69px 0 no-repeat;
   height: 18px;
   width: 16px;
   margin-right: 7px;

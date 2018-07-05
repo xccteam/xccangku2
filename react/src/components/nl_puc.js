@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import logo from './img/logo.png'
+import logo from '../img/nl_img/logo.png'
 
-import './App.css';
+import '../css/nl_puc.css';
 
 class Nl_puc extends Component {
   render() {
