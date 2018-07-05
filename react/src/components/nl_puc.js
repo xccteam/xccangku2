@@ -100,7 +100,7 @@ class Nl_puc extends Component {
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
-                    <Link to={{ pathname: 'phone' }}>手机版下载</Link>
+                    <Link to={{ pathname: '/phone' }}>手机版下载</Link>
                   </li>
                 </ul>
                 {/* <span className="n_hdindex"></span> */}
@@ -212,7 +212,7 @@ $(function(){
   $(".n_mainmenu").click(function(){
 
     $(this).find("a").css("color","#ff7800")
-    return false
+    
   })
 
 
