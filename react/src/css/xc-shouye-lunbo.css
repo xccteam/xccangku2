@@ -8,9 +8,10 @@
 	height: 363px;
 	background-color: red;
 }
-.xc_lunbo div:nth-of-type(1){width: 240px;height: 100%; background-color: antiquewhite;float: left;}
-.xc_lunbo div:nth-of-type(2){width: 759px;height: 100%; background-color: deeppink;float: left;}
-.xc_lunbo div:nth-of-type(2){width: 206;height: 100%; background-color: chocolate;float: left;}
+.xc_lunbo>div:nth-of-type(1){width: 240px;height: 100%; background-color: antiquewhite;float: left;}
+.xc_lunbo>div:nth-of-type(2){width: 759px;height: 100%; background-color: deeppink;float: left;}
+.xc_lunbo>div:nth-of-type(2){width: 206;height: 100%; background-color: chocolate;float: left;}
+.xc_lunbo>div>div{height: 90px;border-bottom: 1px red solid;}
 .xc_chengshizhoubiaoyou{
 	width: 100%;
 	height: 787px;
