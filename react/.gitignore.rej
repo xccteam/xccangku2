@@ -1,0 +1,11 @@
+diff a/react/.gitignore b/react/.gitignore	(rejected hunks)
+@@ -1,5 +0,7 @@
+-.project
++<<<<<<< HEAD
+ dist
+ node_modules
+ .DS_Store
+-
++=======
++node_modules
++>>>>>>> 3fa408fa8dde410cbe9f7327f3398c3e1622eb6b
