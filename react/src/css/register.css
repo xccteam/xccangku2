@@ -1,0 +1,153 @@
+.z_reg{
+	margin:30px 0;
+}
+.z_reg_head{
+	background: #fff;
+	display: flex;
+	height:84px;
+	justify-content: center;
+}
+.z_reg_head>span{
+	display: inline-block;
+	width:180px;
+	height:84px;
+	text-align: center;
+	line-height: 84px;
+	margin-left: 80px;
+	font-size: 16px;
+	position: relative;
+}
+.z_reg_head>span>i{
+	display: inline-block;
+	width:24px;
+	height:24px;
+	background: #ff7800;
+	font-size: 12px;
+	color:#fff;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.z_xian{
+	width:180px;
+	height:7px;
+	background:url(../img/sign_bg.png) no-repeat;
+	display:block;	
+}
+.z_reg_bottom{
+	background: #fff;
+	margin-top: 2px;
+	overflow: hidden;
+	padding-top: 64px;
+}
+.first_left{
+	width:388px;
+	float: left;
+	margin-left: 80px;
+}
+.frist_tit{
+	height:38px;
+	line-height: 38px;
+	font-size: 12px;
+}
+.frist_tit h6{
+	font-size: 18px;
+	display: inline-block;
+	margin-right: 116px;
+	margin-left: 2px;
+}
+.frist_tit a{
+	color:#ff7800;
+	margin-left: 4px;
+}
+form div{
+	line-height: 36px;
+}
+form span{
+	display: inline-block;
+	width:80px;
+	text-align: right;
+	font-size: 18px;
+	color:#848484;
+}
+form input{
+	width:250px;
+	border:0;
+	border:1px solid #848484;
+	border-radius: 4px;
+	height:34px;
+	margin:28px 24px 0 10px;
+	text-indent: 16px;
+}
+form i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background: url(../img/loginIcons.png) -8px -609px no-repeat;
+	display: none;
+}
+.yzm{
+	display: none;
+}
+.yzm input{
+	width:114px;
+	
+}
+.yzm u{
+	font-size: 12px;
+	text-decoration: none;
+	margin-left: 43px;
+	cursor: pointer;
+}
+.yzm b{
+	color:#2040a0;
+	font-size: 20px;
+	font-weight: 900;
+	font-style: oblique;
+}
+
+.first_right{
+	width:332px;
+	float: right;
+	margin-right: 140px;
+}
+.z_tishi{
+	font-size: 12px;
+	text-align: center;
+	color:#ff0000;
+	line-height: 36px;
+	display: none;
+}
+form button{
+	display: block;
+	width:252px;
+	height:40px;
+	border:0;
+	background: #ff7800;
+	font-size: 16px;
+	color:#fff;
+	border-radius: 6px;
+	margin:20px auto 50px;
+}
+.first_right .frist_tit{
+	font-size: 20px;
+}
+.first_right p{
+	font-size: 12px;
+	background: url(../img/icon_jifen.png) no-repeat;
+	padding-left: 50px;
+	color:#717171;
+	margin-top: 24px;
+}
+.first_right b{
+	display: block;
+	color:#000;
+	margin-bottom: 8px;
+}
+.first_right p:nth-of-type(2){
+	background: url(../img/icon_choujiang.png) no-repeat;
+}
+.first_right p:nth-of-type(3){
+	background: url(../img/icon_activity.png) no-repeat;
+}
