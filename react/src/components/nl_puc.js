@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 import logo from '../img/nl_img/logo.png'
-
+import {Link} from 'react-router'
 import '../css/nl_puc.css';
+<<<<<<< HEAD
 import{ Link } from 'react-router';
 
+=======
+import Xc_shouye_lunbotu from './xc-shouye-lunbo';
+import Xc_tuangou from './xc-tuangou';
+>>>>>>> 3fa408fa8dde410cbe9f7327f3398c3e1622eb6b
 class Nl_puc extends Component {
   render() {
     return (
@@ -70,7 +75,7 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-                    <a href="">首页</a>
+                    <Link to={{pathname:'/shouye'}}>首页</Link>
                   </li>
                   <li  className="n_mainmenu">
                     <a href="">每周新品</a>
@@ -79,7 +84,7 @@ class Nl_puc extends Component {
                     <a href="">好去处</a>
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="">团购预约</a>
+                    <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
                     <Link to={{ pathname: 'phone' }}>手机版下载</Link>
@@ -92,9 +97,15 @@ class Nl_puc extends Component {
            
           </header>
         </div>
+<<<<<<< HEAD
         {/* 内容区块 */}
         <section>
           {this.props.children}
+=======
+        
+        <section>
+        	{this.props.children}
+>>>>>>> 3fa408fa8dde410cbe9f7327f3398c3e1622eb6b
         </section>
         {/* bottom部分 */}
         <div id="n_bottom">
