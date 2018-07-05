@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import logo from '../img/nl_img/logo.png'
 
 import '../css/nl_puc.css';
+import{ Link } from 'react-router';
 
 class Nl_puc extends Component {
   render() {
@@ -26,8 +27,8 @@ class Nl_puc extends Component {
                 <div className="n_topr">
                   <span className="n_login">
                     [<a href="" className="n_lg">登录</a>]
-                    &nbsp;
-                    [<a href="" className="n_reg">免费注册</a>]
+                &nbsp;
+                    [<Link to={{pathname:'register'}} className="n_reg">免费注册</Link>]
                   </span>
                   <span className="n_view">
                     <i className="n_icon n_clock"></i>
@@ -81,7 +82,7 @@ class Nl_puc extends Component {
                     <a href="">团购预约</a>
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="">手机版下载</a>
+                    <Link to={{ pathname: 'phone' }}>手机版下载</Link>
                   </li>
                 </ul>
                 <span className="n_hdindex"></span>
@@ -92,7 +93,9 @@ class Nl_puc extends Component {
           </header>
         </div>
         {/* 内容区块 */}
-        <section></section>
+        <section>
+          {this.props.children}
+        </section>
         {/* bottom部分 */}
         <div id="n_bottom">
           default
