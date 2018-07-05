@@ -3,13 +3,11 @@ import React, { Component } from 'react';
 import logo from '../img/nl_img/logo.png'
 import {Link} from 'react-router'
 import '../css/nl_puc.css';
-<<<<<<< HEAD
-import{ Link } from 'react-router';
 
-=======
+
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
->>>>>>> 3fa408fa8dde410cbe9f7327f3398c3e1622eb6b
+
 class Nl_puc extends Component {
   render() {
     return (
@@ -97,15 +95,10 @@ class Nl_puc extends Component {
            
           </header>
         </div>
-<<<<<<< HEAD
         {/* 内容区块 */}
         <section>
-          {this.props.children}
-=======
-        
-        <section>
         	{this.props.children}
->>>>>>> 3fa408fa8dde410cbe9f7327f3398c3e1622eb6b
+
         </section>
         {/* bottom部分 */}
         <div id="n_bottom">
