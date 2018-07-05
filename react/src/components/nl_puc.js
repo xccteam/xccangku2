@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
+
+
 import ReactDOM from 'react-dom';
->>>>>>> fe862df89117ead688228f2a1b3305d2c9bd6ad0
+
 import logo from '../img/nl_img/logo.png';
 import appCode from '../img/nl_img/appCode.png';
 import weixin_code from '../img/nl_img/weixin_code.png';
@@ -10,29 +10,14 @@ import alipay from '../img/nl_img/alipay.png';
 import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
-<<<<<<< HEAD
 import ghs from '../img/nl_img/ghs.png';
-
-
 import $ from 'jquery';
-
 import '../css/nl_puc.css';
-
 import{ Link } from 'react-router';
-
-
-=======
-import $ from 'jquery';
-// import ReactDOM from 'react-dom';
-import {Link} from 'react-router'
-
-import '../css/nl_puc.css';
-
-
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
->>>>>>> fe862df89117ead688228f2a1b3305d2c9bd6ad0
+
 class Nl_puc extends Component {
  
   render() {
@@ -56,7 +41,7 @@ class Nl_puc extends Component {
                 </div>
                 <div className="n_topr">
                   <span className="n_login">
-                    [<a href="" className="n_lg">登录</a>]
+                  [<Link to={{ pathname: 'login' }} className="n_lg">登录</Link>]
                 &nbsp;
                     [<Link to={{pathname:'register'}} className="n_reg">免费注册</Link>]
                   </span>
@@ -100,16 +85,15 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-<<<<<<< HEAD
-                    <a href="#">首页</a>
-                    <Link to={{pathname:'/shouye'}}>首页</Link>
-=======
 
                     <a href="#">首页</a>
+                    <Link to={{pathname:'/shouye'}}>首页</Link>
+
+
+                    <a href="#">首页</a>
 
                     <Link to={{pathname:'/shouye'}}>首页</Link>
 
->>>>>>> fe862df89117ead688228f2a1b3305d2c9bd6ad0
                   </li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
@@ -131,17 +115,17 @@ class Nl_puc extends Component {
            
           </header>
         </div>
-<<<<<<< HEAD
+
 
         {/* 内容区块 */}
-        <section>
+      
     
-=======
+
         {/* 内容区块 */}
         <section>
         	{this.props.children}
 
->>>>>>> fe862df89117ead688228f2a1b3305d2c9bd6ad0
+
         </section>
         {/* bottom部分 */}
         <div id="n_botwrap">
@@ -249,14 +233,11 @@ $(function(){
   $(".n_mainmenu").click(function(){
 
     $(this).find("a").css("color","#ff7800")
-<<<<<<< HEAD
+
     
-=======
-<<<<<<< HEAD
+
     
-=======
->>>>>>> 45e4fbd8f7921aeafcd5ef7bb8e1d1cf58914943
->>>>>>> 30d1fe84ab4acb68f2f4d586ff89511289e34a66
+
   })
 
 
