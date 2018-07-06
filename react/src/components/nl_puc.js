@@ -80,18 +80,10 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-
-                    <a href="#">首页</a>
                     <Link to={{pathname:'/shouye'}}>首页</Link>
-
-
-                    <a href="#">首页</a>
-
-                    <Link to={{pathname:'/shouye'}}>首页</Link>
-
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="#">每周新品</a>
+                  <Link to={{pathname:'/neworder'}}>每周新品</Link>
                   </li>
                   <li  className="n_mainmenu">
                     <a href="">好去处</a>
