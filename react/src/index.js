@@ -6,7 +6,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Register from './components/register';
 import Login from './components/login';
-
+import Neworder from './components/neworder';
 import Phone from './components/phone';
 import Nl_puc from './components/nl_puc';
 import Xc_shouye_lunbotu from './components/xc-shouye-lunbo';
@@ -25,6 +25,7 @@ ReactDOM.render(<Router>
 				<Route path='/register' component={Register}></Route>
 				<Route path='/login' component={Login}></Route>
 				<Route path='/nl_funny' component={Nl_funny}></Route>
+				<Route path='/neworder' component={Neworder}></Route>
 			</Route>
 
 			<Route path='/phone' component={Phone}></Route>

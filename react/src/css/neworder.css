@@ -1,13 +1,45 @@
 .z_neworder_head{
+	overflow: hidden;
 	height:96px;
 	background: #fff;
 	margin:20px auto;
-	padding:0 20px;
+	padding:0 20px0;
+	
 }
 .z_neworder_headtit{
 	height:26px;
 	font-size: 12px;
+	line-height: 26px;
+	color:#666;
+	padding:8px 0 6px;
+	border-bottom: 1px dashed #666;
+}
+.z_neworder_headtit span{
+	display: inline-block;
+	width:28px;
+	height:28px;
+	background: url(../img/nl_img/icon.png) -146px -168px no-repeat;
+	float: left;
+}
+.z_neworder_headtit h6{
+	display: inline-block;
+	float: left;
 }
 .z_neworder_headtit mark{
 	background:0;
+	color:#ff7800;
+}
+.z_neworder_headsaixuan{
+	height:54px;
+	background: red;
+	display: flex;
+	align-items: center;
+}
+.z_neworder_headsaixuan i{
+	color:#666;
+	letter-spacing: 4px;
+}
+.z_neworder_headsaixuan ul{
+	display: inline-block;
+	margin-left: 10px;
 }
