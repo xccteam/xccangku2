@@ -88,7 +88,7 @@ class Phone extends Component{
 	}
 }
 $(function () {
-	console.log($("li"))
+	//console.log($("li"))
 	$("li").mouseenter(function(){
 		var juli = $(this).index()*$(this).width()
 		$(this).parent().find("span").animate({
