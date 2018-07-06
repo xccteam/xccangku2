@@ -13,3 +13,6 @@ h1,h2,h3,h4,h5,h6{font-weight:100;}
 body{ font-family:"微软雅黑";}
 input,a{outline:none;}
 em{font-style: normal}
+i{
+  font-style: normal;
+}
