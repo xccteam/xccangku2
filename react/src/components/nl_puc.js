@@ -10,11 +10,11 @@ import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
-
-import{ Link } from 'react-router'
-
+import { Link } from 'react-router'
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
+import Nl_funny from './nl_funny';
+import Neworder from './neworder';
 
 class Nl_puc extends Component {
  
@@ -92,9 +92,9 @@ class Nl_puc extends Component {
                   <Link to={{pathname:'/neworder'}}>每周新品</Link>
                   </li>
                   <li  className="n_mainmenu">
-                    <link to={{pathname:'/nl_funny'}}>好去处</link>
+                    <Link to={{pathname:'/nl_funny'}}>好去处</Link>
                   </li>
-                  <li>
+                  <li className="n_mainmenu">
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
