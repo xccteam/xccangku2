@@ -91,9 +91,9 @@ class Nl_puc extends Component {
                   <Link to={{pathname:'/neworder'}}>每周新品</Link>
                   </li>
                   <li  className="n_mainmenu">
-                    <link to={{pathname:'/nl_funny'}}>好去处</link>
+                    <Link to={{pathname:'/nl_funny'}}>好去处</Link>
                   </li>
-                  <li>
+                  <li className="n_mainmenu">
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
@@ -218,10 +218,6 @@ $(function(){
   $(".n_mainmenu").click(function(){
     $(this).find("a").css("color","#ff7800").end().siblings().find("a").css("color","#525b5f")
   })
-  $("n_view").click(function(){
-   
-  })
-
 })
 
   
