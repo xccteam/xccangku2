@@ -5,45 +5,26 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Register from './components/register';
-<<<<<<< HEAD
-
-
-=======
 import Login from './components/login';
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
-import Phone from './/components/phone';
+
+import Phone from './components/phone';
 import Nl_puc from './components/nl_puc';
 import Xc_shouye_lunbotu from './components/xc-shouye-lunbo';
 import Xc_tuangou from './components/xc-tuangou';
-<<<<<<< HEAD
+import Nl_funny from './components/nl_funny';
 
 
-=======
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 
 ReactDOM.render(<Router>
 		<Route path="/" component={App}>
 			<IndexRedirect to='/nl_puc' />
-<<<<<<< HEAD
-			<Route path='/nl_puc' component={Nl_puc}>
-
-				
-				<Route path='/shouye' component={Xc_shouye_lunbotu}></Route>
-				<Route path='/tuangou' component={Xc_tuangou}></Route>
-				<IndexRedirect to='/tuangou' />
-			</Route>
-
-			<Route path='/register' component={Register}></Route>
-
-=======
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 			<Route path='/nl_puc' component={Nl_puc}>	
 			<IndexRedirect to='/shouye' />	
 				<Route path='/shouye' component={Xc_shouye_lunbotu}></Route>
 				<Route path='/tuangou' component={Xc_tuangou}></Route>
 				<Route path='/register' component={Register}></Route>
 				<Route path='/login' component={Login}></Route>
-				
+				<Route path='/nl_funny' component={Nl_funny}></Route>
 			</Route>
 
 			<Route path='/phone' component={Phone}></Route>

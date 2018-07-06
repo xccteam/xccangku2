@@ -8,19 +8,11 @@ import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
-<<<<<<< HEAD
-
-=======
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 import $ from 'jquery';
 import '../css/nl_puc.css';
-<<<<<<< HEAD
 
 import{ Link } from 'react-router'
 
-=======
-import{ Link } from 'react-router';
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
@@ -94,20 +86,7 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-<<<<<<< HEAD
-=======
-
-                    <a href="#">首页</a>
                     <Link to={{pathname:'/shouye'}}>首页</Link>
-
-
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
-                    <a href="#">首页</a>
-                    <Link to={{pathname:'/shouye'}}>首页</Link>
-<<<<<<< HEAD
-=======
-
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
                   </li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
@@ -115,7 +94,7 @@ class Nl_puc extends Component {
                   <li  className="n_mainmenu">
                     <link to={{pathname:'/nl_funny'}}>好去处</link>
                   </li>
-                  <li  className="n_mainmenu">
+                  <li>
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
@@ -129,18 +108,10 @@ class Nl_puc extends Component {
            
           </header>
         </div>
-<<<<<<< HEAD
 
         {/* 内容区块 */}
         <section>
         	{this.props.children}
-
-
-=======
-        {/* 内容区块 */}
-        <section>
-        	{this.props.children}
->>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
         </section>
         {/* bottom部分 */}
         <div id="n_botwrap">
