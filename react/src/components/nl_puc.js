@@ -10,7 +10,9 @@ import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
-import{ Link } from 'react-router';
+
+import{ Link } from 'react-router'
+
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
@@ -49,6 +51,10 @@ class Nl_puc extends Component {
                     <i className="n_icon n_phone"></i>
                     <em>手机APP</em>
                   </span>
+                  {/* 最近浏览 */}
+                  <ul className="n_viewelist">
+                      <li className="n_nread">没有最近浏览记录~</li>
+                  </ul>
                 </div>
             </div>
             <div className="n_headcenter">
@@ -86,9 +92,9 @@ class Nl_puc extends Component {
                   <Link to={{pathname:'/neworder'}}>每周新品</Link>
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="">好去处</a>
+                    <link to={{pathname:'/nl_funny'}}>好去处</link>
                   </li>
-                  <li  className="n_mainmenu">
+                  <li>
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
@@ -102,6 +108,7 @@ class Nl_puc extends Component {
            
           </header>
         </div>
+
         {/* 内容区块 */}
         <section>
         	{this.props.children}
@@ -210,10 +217,11 @@ class Nl_puc extends Component {
 }
 $(function(){
   $(".n_mainmenu").click(function(){
-
-    $(this).find("a").css("color","#ff7800")
+    $(this).find("a").css("color","#ff7800").end().siblings().find("a").css("color","#525b5f")
   })
-
+  $("n_view").click(function(){
+   
+  })
 
 })
 
