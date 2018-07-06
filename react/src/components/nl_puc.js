@@ -10,11 +10,10 @@ import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
-
-import{ Link } from 'react-router'
+import{ Link } from 'react-router';
 
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
-import Xc_tuangou from './xc-tuangou';
+import tuangou from './xc-tuangou';
 
 class Nl_puc extends Component {
  
