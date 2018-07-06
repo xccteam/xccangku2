@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import ReactDOM from 'react-dom';
-
 import logo from '../img/nl_img/logo.png';
 import appCode from '../img/nl_img/appCode.png';
 import weixin_code from '../img/nl_img/weixin_code.png';
@@ -13,23 +7,10 @@ import alipay from '../img/nl_img/alipay.png';
 import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
-<<<<<<< HEAD
-=======
-
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
 import{ Link } from 'react-router';
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
@@ -109,12 +90,7 @@ class Nl_puc extends Component {
                     <a href="#">首页</a>
 
                     <Link to={{pathname:'/shouye'}}>首页</Link>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
-                  </li>
+					</li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
                   </li>
@@ -135,24 +111,10 @@ class Nl_puc extends Component {
            
           </header>
         </div>
-<<<<<<< HEAD
-
-
-        {/* 内容区块 */}
-      
-=======
-
-
-       
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
-    
-
-        {/* 内容区块 */}
+		{/* 内容区块 */}
         <section>
         	{this.props.children}
-
-
-        </section>
+		</section>
         {/* bottom部分 */}
         <div id="n_botwrap">
           <div id="n_bottom">
@@ -260,13 +222,7 @@ $(function(){
 
     $(this).find("a").css("color","#ff7800")
 
-<<<<<<< HEAD
-    
 
-    
-
-=======
->>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
   })
 
 
