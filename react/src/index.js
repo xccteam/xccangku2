@@ -15,7 +15,7 @@ import Nl_funny from './components/nl_funny';
 
 
 
-ReactDOM.render(<Router>
+ReactDOM.render(<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRedirect to='/nl_puc' />
 			<Route path='/nl_puc' component={Nl_puc}>	
