@@ -10,10 +10,11 @@ import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
-import{ Link } from 'react-router';
+
+import{ Link } from 'react-router'
+
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
-
 
 class Nl_puc extends Component {
  
@@ -23,7 +24,6 @@ class Nl_puc extends Component {
         {/* 头部信息 */}
         <div id="n_headwrap">
           <header>
-            
             <div className="n_headtop">
                 <div className="n_topl">
                   <span>您好，欢迎来到要出发!</span>
@@ -51,6 +51,10 @@ class Nl_puc extends Component {
                     <i className="n_icon n_phone"></i>
                     <em>手机APP</em>
                   </span>
+                  {/* 最近浏览 */}
+                  <ul className="n_viewelist">
+                      <li className="n_nread">没有最近浏览记录~</li>
+                  </ul>
                 </div>
             </div>
             <div className="n_headcenter">
@@ -82,22 +86,15 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
-
-                    <a href="#">首页</a>
                     <Link to={{pathname:'/shouye'}}>首页</Link>
-
-
-                    <a href="#">首页</a>
-
-                    <Link to={{pathname:'/shouye'}}>首页</Link>
-					</li>
-                  <li  className="n_mainmenu">
-                    <a href="#">每周新品</a>
                   </li>
                   <li  className="n_mainmenu">
-                    <a href="">好去处</a>
+                  <Link to={{pathname:'/neworder'}}>每周新品</Link>
                   </li>
                   <li  className="n_mainmenu">
+                    <link to={{pathname:'/nl_funny'}}>好去处</link>
+                  </li>
+                  <li>
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
@@ -111,10 +108,11 @@ class Nl_puc extends Component {
            
           </header>
         </div>
-		{/* 内容区块 */}
+
+        {/* 内容区块 */}
         <section>
         	{this.props.children}
-		</section>
+        </section>
         {/* bottom部分 */}
         <div id="n_botwrap">
           <div id="n_bottom">
@@ -219,12 +217,11 @@ class Nl_puc extends Component {
 }
 $(function(){
   $(".n_mainmenu").click(function(){
-
-    $(this).find("a").css("color","#ff7800")
-
-
+    $(this).find("a").css("color","#ff7800").end().siblings().find("a").css("color","#525b5f")
   })
-
+  $("n_view").click(function(){
+   
+  })
 
 })
 

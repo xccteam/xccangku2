@@ -1,0 +1,13 @@
+.z_neworder_head{
+	height:96px;
+	background: #fff;
+	margin:20px auto;
+	padding:0 20px;
+}
+.z_neworder_headtit{
+	height:26px;
+	font-size: 12px;
+}
+.z_neworder_headtit mark{
+	background:0;
+}

@@ -6,10 +6,14 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Register from './components/register';
 import Login from './components/login';
-import Phone from './/components/phone';
+
+import Phone from './components/phone';
 import Nl_puc from './components/nl_puc';
 import Xc_shouye_lunbotu from './components/xc-shouye-lunbo';
 import Xc_tuangou from './components/xc-tuangou';
+import Nl_funny from './components/nl_funny';
+
+
 
 ReactDOM.render(<Router>
 		<Route path="/" component={App}>
@@ -20,7 +24,7 @@ ReactDOM.render(<Router>
 				<Route path='/tuangou' component={Xc_tuangou}></Route>
 				<Route path='/register' component={Register}></Route>
 				<Route path='/login' component={Login}></Route>
-				
+				<Route path='/nl_funny' component={Nl_funny}></Route>
 			</Route>
 
 			<Route path='/phone' component={Phone}></Route>
