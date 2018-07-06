@@ -67,6 +67,7 @@ header .n_icon{
 .n_topr{
   float: right;
   color: #666;
+  position: relative;
 }
 
 .n_topr span{
@@ -106,6 +107,26 @@ header .n_icon{
   margin-right: 5px;
 }
 
+/* 最近浏览 */
+.n_viewelist{
+  width: 298px;
+  max-height: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 20;
+  position: absolute;
+  top:41px;
+  right: 106px;
+  display: none;
+}
+.n_viewelist li{
+  overflow: hidden;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.n_viewelist .n_nread{
+  text-align: center;
+} 
 /* logo部分 */
 .n_headcenter{
   padding: 28px 0;
