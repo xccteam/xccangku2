@@ -8,13 +8,19 @@ import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
+<<<<<<< HEAD
 
+=======
+>>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 import $ from 'jquery';
-
 import '../css/nl_puc.css';
+<<<<<<< HEAD
 
 import{ Link } from 'react-router'
 
+=======
+import{ Link } from 'react-router';
+>>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
@@ -26,7 +32,6 @@ class Nl_puc extends Component {
         {/* 头部信息 */}
         <div id="n_headwrap">
           <header>
-            
             <div className="n_headtop">
                 <div className="n_topl">
                   <span>您好，欢迎来到要出发!</span>
@@ -41,7 +46,7 @@ class Nl_puc extends Component {
                 </div>
                 <div className="n_topr">
                   <span className="n_login">
-                    [<a href="" className="n_lg">登录</a>]
+                  [<Link to={{ pathname: 'login' }} className="n_lg">登录</Link>]
                 &nbsp;
                     [<Link to={{pathname:'register'}} className="n_reg">免费注册</Link>]
                   </span>
@@ -89,8 +94,20 @@ class Nl_puc extends Component {
               <div className="n_menu">
                 <ul >
                   <li  className="n_mainmenu">
+<<<<<<< HEAD
+=======
+
                     <a href="#">首页</a>
                     <Link to={{pathname:'/shouye'}}>首页</Link>
+
+
+>>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
+                    <a href="#">首页</a>
+                    <Link to={{pathname:'/shouye'}}>首页</Link>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
                   </li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
@@ -102,7 +119,7 @@ class Nl_puc extends Component {
                     <Link to={{pathname:'/tuangou'}}>团购</Link>
                   </li>
                   <li  className="n_mainmenu">
-                    <Link to={{ pathname: 'phone' }}>手机版下载</Link>
+                    <Link to={{ pathname: '/phone' }}>手机版下载</Link>
                   </li>
                 </ul>
                 {/* <span className="n_hdindex"></span> */}
@@ -112,12 +129,18 @@ class Nl_puc extends Component {
            
           </header>
         </div>
+<<<<<<< HEAD
 
         {/* 内容区块 */}
         <section>
         	{this.props.children}
 
 
+=======
+        {/* 内容区块 */}
+        <section>
+        	{this.props.children}
+>>>>>>> c82d9b43d116117ec09b7b44f735b95c0515602a
         </section>
         {/* bottom部分 */}
         <div id="n_botwrap">
