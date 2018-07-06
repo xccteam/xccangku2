@@ -10,7 +10,7 @@ import ghs from '../img/ghs.png';
 import lunbo1 from '../img/230x414_1.jpg';
 import lunbo2 from '../img/230x414_2.jpg';
 import lunbo3 from '../img/230x414_3.jpg'
-
+import { Link } from 'react-router';
 
 class Phone extends Component{
 	
@@ -21,8 +21,12 @@ class Phone extends Component{
 					<a href="/"><img src={logo}/></a>
 					<ul>
 						<li><a href="">首页</a></li>
-						<li><a href="">好去处</a></li>
-						<li><a href="">每周新品</a></li>
+						<li>
+							<Link to={{ pathname: '/nl_funny' }}>好去处</Link>
+						</li>
+						<li>
+							<Link to={{pathname:'/neworder'}}>每周新品</Link>
+						</li>
 						<span></span>
 					</ul>
 				</div>
@@ -84,65 +88,65 @@ class Phone extends Component{
 		)
 	}
 	componentDidMount(){
-		
+		$("li").mouseenter(function () {
+			var juli = $(this).index() * $(this).width()
+			$(this).parent().find("span").animate({
+				left: juli
+			}, 500)
+		})
+
+		$(document).ready(function () {
+			var i = 0;
+			var clone = $(".z_lunboimg li").first().clone();
+			$(".z_lunboimg").append(clone);
+			var size = $(".z_lunboimg li").length;
+
+			var timer = setInterval(function () {
+				i++;
+				move();
+			}, 2000);
+
+			$(".z_lunbo").hover(function () {
+				clearInterval(timer);
+			}, function () {
+				timer = setInterval(function () {
+					i++;
+					move();
+				}, 2000);
+			})
+
+			$(".z_lunbonum li").hover(function () {
+
+				var index = $(this).index();//获取当前索引值
+				i = index;
+				$(".z_lunbonum").stop().animate({ left: -index * 230 }, 500);
+				$(this).addClass("bg").siblings().removeClass("bg");
+			});
+
+			//移动事件
+			function move() {
+
+				if (i == size) {
+					$(".z_lunboimg").css({ left: 0 });
+					i = 1;
+				}
+				if (i == -1) {
+					$(".z_lunboimg").css({ left: -(size - 1) * 230 });
+					i = size - 2;
+				}
+				$(".z_lunboimg").stop().animate({ left: -i * 230 }, 1000);
+				if (i == size - 1) {
+					$(".num").eq(0).addClass("bg").siblings().removeClass("bg");
+				} else {
+					$(".num").eq(i).addClass("bg").siblings().removeClass("bg");
+				}
+			}
+		})	
 	}
 }
 $(function () {
 	//console.log($("li"))
-	$("li").mouseenter(function(){
-		var juli = $(this).index()*$(this).width()
-		$(this).parent().find("span").animate({
-			left:juli
-		},500)
-	})
 	
-	$(document).ready(function () {
-		var i = 0;
-		var clone = $(".z_lunboimg li").first().clone();
-		$(".z_lunboimg").append(clone);
-		var size=$(".z_lunboimg li").length;
-		
-		var timer = setInterval(function () {
-			i++;
-			move();
-		}, 2000);
-
-		$(".z_lunbo").hover(function () {
-			clearInterval(timer);
-		}, function () {
-			timer = setInterval(function () {
-				i++;
-				move();
-			}, 2000);
-		})
-
-		$(".z_lunbonum li").hover(function () {
-
-			var index = $(this).index();//获取当前索引值
-			i = index;
-			$(".z_lunbonum").stop().animate({ left: -index * 230 }, 500);
-			$(this).addClass("bg").siblings().removeClass("bg");
-		});
-
-		//移动事件
-		function move() {
-
-			if (i == size) {
-				$(".z_lunboimg").css({ left: 0 });
-				i = 1;
-			}
-			if (i == -1) {
-				$(".z_lunboimg").css({ left: -(size - 1) * 230 });
-				i = size - 2;
-			}
-			$(".z_lunboimg").stop().animate({ left: -i * 230 }, 1000);
-			if (i == size - 1) {
-				$(".num").eq(0).addClass("bg").siblings().removeClass("bg");
-			} else {
-				$(".num").eq(i).addClass("bg").siblings().removeClass("bg");
-			}
-		}
-	})	
 
 	
 })

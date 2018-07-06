@@ -84,11 +84,11 @@ class Neworder extends Component{
 										return (
 											<a href="" key={i}>
 												<img src={item.imgname} />
-												<strong className="z_mainconleft_list_tit">湖州 | 奇境乐园</strong>
+												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length-1)} | 奇境乐园</strong>
 												<div className="z_mainconleft_list_recomm">
 													<span>
-														<em>3</em>
-														购买
+														<em>{item.people}</em>
+														人购买
 									</span>
 													<span>
 														<em>100%</em>
@@ -96,15 +96,15 @@ class Neworder extends Component{
 									</span>
 												</div>
 												<div className="z_mainconleft_list_dis">
-													<p>位于HelloKitty乐园斜对面，运用光与影的艺术，将瑰丽的想象变成触手可及的乐园。项目包含许愿灯、魔幻滑梯、彩绘宇宙、魔法屋、魔音管弦乐、声波大战、时空漫画、影子与魔法球等等。</p>
+													<p>{item.text}</p>
 													<span className="z_mainconleft_list_price">
 														<i>￥</i>
-														120
+														{item.price}
 										<em>起/份</em>
-														<u>门市价:128</u>
+														<u>门市价:{item.oldprice}</u>
 														<span className="z_sale_tips">
 															<i></i>
-															9.3折
+															{item.zhekou}折
 										</span>
 													</span>
 												</div>

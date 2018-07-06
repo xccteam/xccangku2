@@ -199,6 +199,9 @@
 	float: right;
 	color:#666;
 }
+.z_maincon_lvyougonglue ul li span:hover{
+	color:#ff7800;
+}
 .z_remaixinpin_img{
 	position: relative;
 	cursor: pointer;
