@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import ReactDOM from 'react-dom';
 
 import logo from '../img/nl_img/logo.png';
@@ -10,10 +13,23 @@ import alipay from '../img/nl_img/alipay.png';
 import chengxin from '../img/nl_img/chengxin.jpg';
 import kexin from '../img/nl_img/kexin.jpg';
 import zhizhao from '../img/nl_img/zhizhao.jpg';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
 import{ Link } from 'react-router';
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 
@@ -94,6 +110,10 @@ class Nl_puc extends Component {
 
                     <Link to={{pathname:'/shouye'}}>首页</Link>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
                   </li>
                   <li  className="n_mainmenu">
                     <a href="#">每周新品</a>
@@ -115,10 +135,16 @@ class Nl_puc extends Component {
            
           </header>
         </div>
+<<<<<<< HEAD
 
 
         {/* 内容区块 */}
       
+=======
+
+
+       
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
     
 
         {/* 内容区块 */}
@@ -234,10 +260,13 @@ $(function(){
 
     $(this).find("a").css("color","#ff7800")
 
+<<<<<<< HEAD
     
 
     
 
+=======
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
   })
 
 

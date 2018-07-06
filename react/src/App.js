@@ -6,6 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+<<<<<<< HEAD
 
 
 
@@ -14,6 +15,8 @@ class App extends Component {
 
        
 
+=======
+>>>>>>> 24ed4d709701ef343a5c4a2404e6c055587d1eea
         <div>
           {this.props.children}
         </div>
