@@ -10,18 +10,10 @@ import zhizhao from '../img/nl_img/zhizhao.jpg';
 import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
-<<<<<<< HEAD
 import{ Link } from 'react-router';
 
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import tuangou from './xc-tuangou';
-=======
-import { Link } from 'react-router'
-import Xc_shouye_lunbotu from './xc-shouye-lunbo';
-import Xc_tuangou from './xc-tuangou';
-import Nl_funny from './nl_funny';
-import Neworder from './neworder';
->>>>>>> fc857e7a25e859d93dffeb574c587698a439b9f7
 
 class Nl_puc extends Component {
  
@@ -38,7 +30,7 @@ class Nl_puc extends Component {
                     <i className="n_icon n_icondz"></i>
                     <em>河南</em>
                   </span>
-                  <span>
+                  <span className="n_ghsf">
                     <em>更换省份</em>
                     <i className="n_icon n_icondlist"></i>
                   </span>
@@ -63,6 +55,90 @@ class Nl_puc extends Component {
                       <li className="n_nread">没有最近浏览记录~</li>
                   </ul>
                 </div>
+                {/* 更换省份 */}
+                <table className="n_provlist">
+                    <tbody>
+                      <tr>
+                        <th>华南地区</th>
+                        <td>
+                            <span id="GuangDong">广东</span>
+                            <span id="HaiNan" >海南</span>
+                            <span id="FuJian">福建</span>
+                            <span id="JiangXi">江西</span>
+                            <span id="GuangXiZhuangZu">广西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>华东地区</th>
+                        <td>
+                            <span id="ShangHai" >上海</span>
+                            <span id="ZheJiang" >浙江</span>
+                            <span id="JiangSu" >江苏</span>
+                            <span id="AnHui" >安徽</span>
+                            <span id="ShanDong">山东</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>华北地区</th>
+                        <td>
+                            <span id="BeiJing">北京</span>
+                            <span id="TianJin">天津</span>
+                            <span id="HeBei" >河北</span>
+                            <span id="ShanXi">山西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>西南地区</th>
+                        <td>
+                            <span id="SiChuan">四川</span>
+                            <span id="ZhongQing">重庆</span>
+                            <span id="YunNan">云南</span>
+                            <span id="GuiZhou">贵州</span>
+                            <span id="XiCang">西藏</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>西北地区</th>
+                        <td>
+                            <span id="ShanXiSheng">陕西</span>
+                            <span id="GanSu">甘肃</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>东北地区</th>
+                        <td>
+                            <span id="LiaoNing">辽宁</span>
+                            <span id="JiLin">吉林</span>
+                            <span id="HeiLongJiang">黑龙江</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>华中地区</th>
+                        <td>
+                            <span id="HuNan">湖南</span>
+                            <span id="HuBei">湖北</span>
+                            <span id="HeNan">河南</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>港澳台</th>
+                        <td>
+                            <span id="XiangGang">香港</span>
+                            <span id="AoMen">澳门</span>
+                        	<span id="TaiWan">台湾</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>境外地区</th>
+                        <td>
+                            <span id="TaiGuo">泰国</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colSpan="2" className="n_last">*提示：根据你选择的地区，我们将为你切换至该地区的首页</td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
             <div className="n_headcenter">
               <a href="/" className="log">
@@ -224,8 +300,34 @@ class Nl_puc extends Component {
 }
 $(function(){
   $(".n_mainmenu").click(function(){
+    // console.log("1")
     $(this).find("a").css("color","#ff7800").end().siblings().find("a").css("color","#525b5f")
   })
+  let flag=true;
+  $(".n_ghsf").click(function(){
+     
+      if(flag){
+        $(this).find("i").css({backgroundPosition:"-232px -9px"})
+        $(".n_provlist").animate({top:"41px"})
+        flag=false;
+      }else{
+        $(this).find("i").css({backgroundPosition:"-232px 0px"})
+        $(".n_provlist").animate({top:"-473px"})
+        flag=true;
+      }
+  })
+  $(".n_view").click(function(){
+    if(flag){
+      $(this).find(".n_iconbot").css({backgroundPosition:"-232px -9px"})
+      $(".n_viewelist").animate({top:"41px"})
+      flag=false;
+    }else{
+      $(this).find(".n_iconbot").css({backgroundPosition:"-232px 0px"})
+      $(".n_viewelist").animate({top:"-473px"})
+      flag=true;
+    }
+  })
+  
 })
 
   
