@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import '../css/neworder.css';
 import $ from 'jquery';
+import { Link } from 'react-router';
 import pic1 from '../img/oYYBAFsXf4qAf-80AABiwYG_KCQ199.jpg';
 import pic2 from '../img/ooYBAFszTICAHe9ZAAH5R-UfBKE351.jpg';
-import Mock from 'mockjs';
 
-Mock.mock('http://www.baidu.com/api', {
-		"user|13":[
-			{
-				"ids|+1":0,
-				"name":"@province()",
-				"detail|1-8": [{ "imgname": "@dataImage('290x163')", "text": "@cparagraph(20,50)", "address": "@city()", "people": "@integer(1,100)", "price": "@integer(120,980)", "priceold|0-1": "@integer(130,1000)", "zhekou": "@integer(1,10)", "dianping": "@integer(0,100)"}] ,
-			}
-		]
-	})
+
 
 class Neworder extends Component{
 	constructor(props){
@@ -82,7 +74,7 @@ class Neworder extends Component{
 
 								this.state.arr1.map(function (item,i) {
 										return (
-											<a href="" key={i}>
+											<Link to={{ pathname: 'details' }} key={i}>
 												<img src={item.imgname} />
 												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length - 1)} | {item.address.slice(0, item.address.length - 1)}奇境乐园</strong>
 												<div className="z_mainconleft_list_recomm">
@@ -108,7 +100,7 @@ class Neworder extends Component{
 										</span>
 													</span>
 												</div>
-											</a>
+											</Link>
 									)
 								})
 							}

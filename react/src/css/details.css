@@ -1,0 +1,99 @@
+.z_details_path{
+	font-size: 12px;
+	color:#666;
+	margin:18px 0;
+}
+.z_details_path mark{
+	background: 0;
+	color:#ff7800;
+}
+.z_details_mse{
+	overflow: hidden;
+	width:100%;
+}
+.z_details_mseleft{
+	width:700px;
+	height:383px;
+	background: red;
+	float: left;
+	padding:15px 20px 0 16px;
+}
+
+.z_mseleft_bigimg{
+	width:700px;
+	height:292px;
+	background: pink;
+}
+.z_mseleft_smallimg{
+	width:700px;
+	height:68px;
+	background: plum;
+	margin-top: 10px;
+}
+
+
+
+
+
+.z_details_mseright{
+	width:443px;
+	height:398px;
+	float: right;
+	background: yellow;
+	padding-right: 24px;
+}
+.z_details_mseright h1{
+	font-size: 24px;
+	margin:20px 0 12px;
+}
+.z_details_mseright p{
+	font-size: 12px;
+	color:#666;
+	line-height: 20px;
+}
+.z_details_right_price .p1{
+	margin:30px 0;
+}
+.z_details_right_price .p1 i{
+	color:#ff7800;
+}
+.z_details_right_price .p1 mark{
+	font-size: 26px;
+	font-weight: 900;
+	color:#ff7800;
+	background: 0;
+	margin:0 10px 0 6px;
+}
+.z_details_right_price .p1 u{
+	margin:0 20px 0 10px;
+	text-decoration: line-through;
+}
+.z_details_right_price .p1 strong{
+	font-weight: 100;
+}
+.z_details_right_price .p2 mark{
+	margin-left: 10px;
+	background: 0;
+	color:#64b098;
+}
+.z_details_right_price .p2 i{
+	margin:0 14px;
+}
+.z_details_right_app{
+	background: #f3f5f6;
+	padding:10px 0 8px;
+}
+.z_details_right_app .app_top{
+	display: block;
+	font-size: 12px;
+	color:#64b098;
+	margin-bottom: 20px;
+}
+.z_details_right_app .app_top mark{
+	color:#ff7800;
+	background: 0;
+}
+.z_details_right_app .app_bottom{
+	font-size: 12px;
+	color:#666;
+}

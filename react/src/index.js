@@ -12,7 +12,7 @@ import Nl_puc from './components/nl_puc';
 import Xc_shouye_lunbotu from './components/xc-shouye-lunbo';
 import Xc_tuangou from './components/xc-tuangou';
 import Nl_funny from './components/nl_funny';
-
+import Details from './components/details';
 
 
 ReactDOM.render(<Router history={hashHistory}>
@@ -26,6 +26,7 @@ ReactDOM.render(<Router history={hashHistory}>
 				<Route path='/login' component={Login}></Route>
 				<Route path='/nl_funny' component={Nl_funny}></Route>
 				<Route path='/neworder' component={Neworder}></Route>
+				<Route path='/details' component={Details}></Route>
 			</Route>
 			<Route path='/phone' component={Phone}></Route>
 		</Route>
