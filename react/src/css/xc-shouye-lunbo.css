@@ -10,22 +10,26 @@
 }
 .xc_lunbo>div:nth-of-type(1){width: 240px;height: 100%; background-color: antiquewhite;float: left;}
 .xc_lunbo>div:nth-of-type(2){width: 759px;height: 100%; background-color: deeppink;float: left;}
-.xc_lunbo>div:nth-of-type(2){width: 206;height: 100%; background-color: chocolate;float: left;}
+.xc_lunbo>div:nth-of-type(3){width: 207px;height: 100%; background-color: chocolate;float: left;}
 .xc_lunbo>div>div{height: 90px;border-bottom: 1px red solid;}
 .xc_chengshizhoubiaoyou{
 	width: 100%;
-	height: 787px;
-	background-color: gold;
+	height: 867px;
+	
+	overflow: hidden;
 }
 .xc_zbjq{
 	width: 100%;
     height: 397px;
 	background-color: pink;
 }
+.xc_zbjq>img{width: 100%}
 .xc_jingxuanzhuti{
 	width: 100%;
 	height: 374px;
 	background-color: aqua;
 }
+.xc_jingxuanzhuti>img{width: 100%;height: 100%}
 .xc_lunbo>div>div>div:nth-of-type(1){float: left;color: red}
 .xc_lunbo>div>div>div:nth-of-type(2){border: 1px red solid;width: 50px;height:50px;color:royalblue}
+.xc_shangheyuan>img{width: 100%;height: 100%}
