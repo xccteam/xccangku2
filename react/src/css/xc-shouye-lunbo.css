@@ -27,3 +27,5 @@
 	height: 374px;
 	background-color: aqua;
 }
+.xc_lunbo>div>div>div:nth-of-type(1){float: left;color: red}
+.xc_lunbo>div>div>div:nth-of-type(2){border: 1px red solid;width: 50px;height:50px;color:royalblue}
