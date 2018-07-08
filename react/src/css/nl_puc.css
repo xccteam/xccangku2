@@ -8,8 +8,7 @@ header,section,#n_bottom,footer{margin: 0 auto;width: 1204px;}
 
 header{
   height: 202px;
-  overflow: hidden;
-
+ 
 }
 
 .n_headtop{
@@ -18,6 +17,7 @@ header{
   border-bottom: 1px solid #ddd;
   font-size: 12px;
   line-height: 38px;
+  position: relative; 
 }
 
 .n_topl{
@@ -106,7 +106,41 @@ header .n_icon{
   width: 11px;
   margin-right: 5px;
 }
-
+/* 更换省份 */
+.n_provlist{
+  width: 700px;
+  border: 1px solid #ddd;
+  z-index: 10;
+  background: #fff;
+  position: absolute;
+  top:-471px;
+  left:160px;
+}
+.n_provlist tr th{
+  text-align: center;
+  width: 90px;
+  font-weight: 700;
+  color: #333;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.n_provlist tr td{
+  padding: 6px;
+  line-height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+.n_provlist tr td span{
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.n_provlist tr td span:hover{
+  background: #ff7800;
+  color: #fff;
+}
+.n_last{
+  text-align: center;
+}
 /* 最近浏览 */
 .n_viewelist{
   width: 298px;
@@ -117,7 +151,6 @@ header .n_icon{
   position: absolute;
   top:41px;
   right: 106px;
-  display: none;
 }
 .n_viewelist li{
   overflow: hidden;
@@ -208,6 +241,7 @@ header .n_icon{
   width: 16px;
   margin-right: 7px;
 }
+
 
 /* 导航 */
 nav{
@@ -317,6 +351,7 @@ nav{
 }
 .n_botlink li:nth-of-type(5) i{
   background-position: -196px 0;
+  
 }
 /* 关于footer部分 */
 #n_footwarp{
