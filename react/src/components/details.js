@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import '../css/details.css';
 import $ from 'jquery';
 import '../css/swiper-3.3.1.min.css';
-import Swiper from 'swiper';
+// import Swiper from 'swiper';
 
 
 
 class Details extends Component{
-	componentWillMount(){
-		new Swiper('.swiper-container', {
-			direction: 'horizontal',
-			loop: true,
-			speed: 300,
-			autoplay: 1000
+	// componentWillMount(){
+	// 	new Swiper('.swiper-container', {
+	// 		direction: 'horizontal',
+	// 		loop: true,
+	// 		speed: 300,
+	// 		autoplay: 1000
 
-		})
-	}
+	// 	})
+	// }
 	render(){
 		return(
 			<div>

@@ -9,10 +9,12 @@ const Reducer=function(state,action){
 	switch (action.type){
 		case 'ADD_TODO':
 			return [...state,action.text]
-			break;
+			//break;
+			case 'login':
+			return action.text
 		default:
 			return state;
-			break;
+			//break;
 	}
 	
 }

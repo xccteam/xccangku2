@@ -15,11 +15,58 @@ import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 import Nl_funny from './nl_funny';
 import Neworder from './neworder';
-
+import Actions from './redux/Actions'
+import Store from './redux/Store'
 
 class Nl_puc extends Component {
+  constructor(props){
+		super(props)
+		this.state={
+      
+     
+		}
+		this.onchanges=this.onchanges.bind(this)
+	}
+	
+	
+	onchanges(){
+    this.setState({str:Store.getState()})
+    
+  }
+  // componentWillUpdate(){
+    
+  //     console.log($('#xcname').html())
+     
+    
+   
+  // }
+
+	componentDidMount(){
+    Store.subscribe(this.onchanges)
+    // if($('#xcname').html===''){
+    //   console.log('kong')
+    // }
+   
+	}
  
   render() {
+let xcusermessage;
+console.log(this.state.str);//[]
+console.log(this.state.str111);
+if(this.state.str==undefined){
+  xcusermessage=(
+    <a>
+      [<Link to={{ pathname: 'login' }} className="n_lg">登录</Link>]
+      [<Link to={{pathname:'register'}} className="n_reg">免费注册</Link>]
+    </a>
+    
+  )
+}else{
+  xcusermessage=(
+    <a>欢迎-{this.state.str.phone}</a>
+  )
+}
+
     return (
       <div className="Nl_puc">
         {/* 头部信息 */}
@@ -39,9 +86,11 @@ class Nl_puc extends Component {
                 </div>
                 <div className="n_topr">
                   <span className="n_login">
-                  [<Link to={{ pathname: 'login' }} className="n_lg">登录</Link>]
-                &nbsp;
-                    [<Link to={{pathname:'register'}} className="n_reg">免费注册</Link>]
+                  {xcusermessage}
+                 
+                 
+                  
+                 
                   </span>
                   <span className="n_view">
                     <i className="n_icon n_clock"></i>
@@ -330,7 +379,9 @@ $(function(){
     }
   })
   
+  
 })
+
 
   
 export default Nl_puc;
