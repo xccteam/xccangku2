@@ -84,7 +84,7 @@ class Neworder extends Component{
 										return (
 											<a href="" key={i}>
 												<img src={item.imgname} />
-												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length - 1)} | {item.address.slice(0, item.address.length - 1)}奇境乐园</strong>
+												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length-1)} | 奇境乐园</strong>
 												<div className="z_mainconleft_list_recomm">
 													<span>
 														<em>{item.people}</em>
