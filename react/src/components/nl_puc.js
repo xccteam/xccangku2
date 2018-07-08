@@ -15,8 +15,12 @@ import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 import Nl_funny from './nl_funny';
 import Neworder from './neworder';
+<<<<<<< HEAD
 import Actions from './redux/Actions'
 import Store from './redux/Store'
+=======
+
+>>>>>>> e87562ab8426a8139f156599223f10271d6f37e7
 
 class Nl_puc extends Component {
   constructor(props){
