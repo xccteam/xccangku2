@@ -11,17 +11,9 @@ import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
 import{ Link } from 'react-router';
-<<<<<<< HEAD
 
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import tuangou from './xc-tuangou';
-=======
-import Xc_shouye_lunbotu from './xc-shouye-lunbo';
-import Xc_tuangou from './xc-tuangou';
-import Nl_funny from './nl_funny';
-import Neworder from './neworder';
-
->>>>>>> 49f13c71f7ea0bdf8c18736e902846756b0dca43
 
 class Nl_puc extends Component {
  
@@ -298,6 +290,41 @@ class Nl_puc extends Component {
               </li>
             </ul>
         </footer>
+        {/* 右侧固定导航栏 */}
+        <ul className="n_fixedrnav">
+          <li className="n_navapp">
+            <a href="#">
+              <i>扫二维码</i>
+              <div className="n_navsewm">
+                <strong>下载要出发APP</strong>
+                <img src={appCode}/>
+              </div>
+            </a>
+          </li>
+          <li className="n_kfphone">
+            <a href="#">
+              <i>客服电话</i>
+              <div>
+                <span>24小时客服电话</span>
+                <em>400-118-1166</em>
+              </div>
+            </a>
+          </li>
+          <li className="n_navgzwx">
+            <a href="#">
+              <i>关注微信</i>
+              <div className="n_navwxgzh">
+                <strong>关注微信公众号</strong>
+                <img src={weixin_code}/>
+              </div>
+            </a>
+          </li>
+          <li className="n_rentop">
+            <a href="#">
+              <i>返回顶部</i>
+            </a>
+          </li>
+        </ul>
         </div>
         
       </div>
@@ -335,7 +362,18 @@ $(function(){
       flag=true;
     }
   })
-  
+  // 固定后侧导航
+  $(".n_fixedrnav>li").hover(function(){
+    // console.log($(this))
+    $(this).addClass("n_navactive").find("a").css({display:"block"})
+  },function(){
+    $(this).removeClass("n_navactive").find("a").css({display:"none"})
+  }
+)
+  $(".n_rentop>a").click(function(){
+      $("html,body").animate({scrollTop:0},300);
+      return false;
+  })
 })
 
   
