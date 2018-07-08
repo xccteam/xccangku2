@@ -1,43 +1,80 @@
 import React, { Component } from 'react';
 import '../css/neworder.css';
 import $ from 'jquery';
+import pic1 from '../img/oYYBAFsXf4qAf-80AABiwYG_KCQ199.jpg';
+import pic2 from '../img/ooYBAFszTICAHe9ZAAH5R-UfBKE351.jpg';
+import Mock from 'mockjs';
+
+Mock.mock('http://www.baidu.com/api', {
+		"user|13":[
+			{
+				"ids|+1":0,
+				"name":"@province()",
+				"detail|1-8": [{ "imgname": "@dataImage('290x163')", "text": "@cparagraph(20,50)", "address": "@city()", "people": "@integer(1,100)", "price": "@integer(120,980)", "priceold|0-1": "@integer(130,1000)", "zhekou": "@integer(1,10)", "dianping": "@integer(0,100)"}] ,
+			}
+		]
+	})
 
 class Neworder extends Component{
+	constructor(props){
+		super(props)
+		this.state={
+			arr:[],
+			arr1:[],
+			num:0
+		}
+		
+	}
+	tap(i){
+		// console.log(i)
+		var str = this.state.arr[i].detail
+		// console.log(this.state.arr[i].detail)
+		// console.log(str)
+		this.setState({
+			arr1:str
+		})
+		// console.log(this.state.arr1)
+	}
+	all(){
+		var newarr=[]
+		this.state.arr.map(function(item){
+			//console.log(item.detail)
+			item.detail.map(function(attr){
+				//console.log(attr)
+				newarr.push(attr)
+			})
+		})
+		this.setState({
+			arr1: newarr
+		})
+	//console.log(newarr)
+	}
 	render(){
 		return(
 			<div>
 				<div className="z_neworder_head">
 					<div className="z_neworder_headtit">
 						<span></span>
-						<h6>本周新品<mark>50</mark>份</h6>
+						<h6>本周新品<mark>{this.state.num}</mark>份</h6>
 					</div>
 					<div className="z_neworder_headsaixuan">
 						<i>筛选:</i>
-						<ul>
-							<li>
-								<span>全部<mark>(50)</mark></span>
+						<ul className="saixuan_list">
+							<li >
+								<span onClick={this.all.bind(this)}>全部<mark>({this.state.num})</mark></span>
 							</li>
-							<li>
-								<span>浙江<mark>(3)</mark></span>
-							</li>
-							<li>
-								<span>广东<mark>(21)</mark></span>
-							</li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							{
+								this.state.arr.map(function(item,i){
+									return(
+										<li key={i} onClick={this.tap.bind(this,i)}>
+											<span>{item.name.slice(0,2)}<mark>({item.detail.length})</mark></span>
+										</li>
+									)
+								}.bind(this))
+							}
 						</ul>
 					</div>
 				</div>
-<<<<<<< HEAD
 				<div className="z_neworder_maincon">
 					<div className="z_neworder_maincon_left">
 						<div className="z_mainconleft_list">
@@ -47,7 +84,7 @@ class Neworder extends Component{
 										return (
 											<a href="" key={i}>
 												<img src={item.imgname} />
-												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length-1)} | 奇境乐园</strong>
+												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length - 1)} | {item.address.slice(0, item.address.length - 1)}奇境乐园</strong>
 												<div className="z_mainconleft_list_recomm">
 													<span>
 														<em>{item.people}</em>
@@ -218,11 +255,38 @@ class Neworder extends Component{
 						</div>
 					</div>
 				</div>
-=======
->>>>>>> 94ee5afd9d1b667c5c60d5dbbfb55fc9eb95e8a0
 			</div>
 		)
 	}
+	componentWillMount(){
+		var _this=this;
+		var oldarr=[];
+		$.ajax({
+			type: 'post',
+			url: 'http://www.baidu.com/api',
+			dataType: 'json',
+			success: function (data) {
+				console.log(data.user)
+				_this.setState({arr:data.user})
+				data.user.map(function(item,i){
+					item.detail.map(function(attr){
+						oldarr.push(attr)
+					})
+					//console.log(item.detail.length)
+				})
+				_this.setState({
+					arr1: oldarr,
+					num:oldarr.length
+				})
+			}
+		})
+	}
 }
-
+$(function () {
+	$(".saixuan_list").find("li").click(function () {
+		$(this).css({ color:"#fff", background: "#ff7800" }).find("mark").css("color","#fff").end().siblings().css({color:"#ff7800",background:"0"}).find("mark").css("color","#666")
+	})
+	
+	
+})
 export default Neworder;
