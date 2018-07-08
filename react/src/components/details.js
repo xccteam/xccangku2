@@ -1,23 +1,6 @@
 import React, { Component } from 'react';
 import '../css/details.css';
 import $ from 'jquery';
-<<<<<<< HEAD
-import '../css/swiper-3.3.1.min.css';
-// import Swiper from 'swiper';
-
-
-
-class Details extends Component{
-	// componentWillMount(){
-	// 	new Swiper('.swiper-container', {
-	// 		direction: 'horizontal',
-	// 		loop: true,
-	// 		speed: 300,
-	// 		autoplay: 1000
-
-	// 	})
-	// }
-=======
 import pic from '../img/oYYBAFs7MqWACkv9AALTy-GLhTI844.jpg';
 import map from '../img/staticimage.png';
 import pic3 from '../img/ooYBAFs7PGSAeIInAAI3TX4FhAo369.jpg';
@@ -25,8 +8,63 @@ import pic2 from '../img/ooYBAFszTICAHe9ZAAH5R-UfBKE351.jpg';
 import pic1 from '../img/oYYBAFsXf4qAf-80AABiwYG_KCQ199.jpg';
 
 class Details extends Component{
->>>>>>> e87562ab8426a8139f156599223f10271d6f37e7
 	render(){
+
+		$(function () {
+			console.log($(".z_details_mainleft_nav"))
+			var startpos=$(".z_details_mainleft_nav").offset().top;
+			var gmxz=$(".z_goumaixuzhi").offset().top;
+			var jtzn = $(".z_jiaotonghzinan").offset().top;
+			var xqjs=$(".z_xiangqingjieshao").offset().top;
+			var yhpj=$(".z_yonghupingjia").offset().top;
+		
+			$(window).scroll(function(){
+				
+				if ($("html").scrollTop() >= startpos ){
+					$(".z_details_mainleft_nav").css({ position: "fixed", left: $(".z_details_mainleft_nav").offset().left,top:0,})
+				}else{
+					$(".z_details_mainleft_nav").css({ position:"static",left:0,top:0})
+				}
+				// 购买须知
+				if ($("html").scrollTop() >= gmxz && $("html").scrollTop() < jtzn){
+					$(".z_details_mainleft_nav").find("li").eq(0).css({background:"#ff7800",color:"#fff"})
+				}else{
+					$(".z_details_mainleft_nav").find("li").eq(0).css({ background: "#fff", color: "#666"})
+				}
+				$(".z_details_mainleft_nav").find("li").eq(0).click(function () {
+					$("html").scrollTop(gmxz)
+				})
+				// 交通指南
+				if ($("html").scrollTop() >= jtzn && $("html").scrollTop() < xqjs){
+					$(".z_details_mainleft_nav").find("li").eq(1).css({background:"#ff7800",color:"#fff"})
+				}else{
+					$(".z_details_mainleft_nav").find("li").eq(1).css({ background: "#fff", color: "#666"})
+				}
+				$(".z_details_mainleft_nav").find("li").eq(1).click(function(){
+					$("html").scrollTop(jtzn)
+				})
+				// 详情介绍
+				if ($("html").scrollTop() >= xqjs && $("html").scrollTop() < yhpj) {
+					$(".z_details_mainleft_nav").find("li").eq(2).css({ background: "#ff7800", color: "#fff" })
+				} else {
+					$(".z_details_mainleft_nav").find("li").eq(2).css({ background: "#fff", color: "#666" })
+				}
+				$(".z_details_mainleft_nav").find("li").eq(2).click(function(){
+					$("html").scrollTop(xqjs)
+				})
+				// 用户评价
+				if ($("html").scrollTop() >= yhpj ) {
+					$(".z_details_mainleft_nav").find("li").eq(3).css({ background: "#ff7800", color: "#fff" })
+				} else {
+					$(".z_details_mainleft_nav").find("li").eq(3).css({ background: "#fff", color: "#666" })
+				}
+				$(".z_details_mainleft_nav").find("li").eq(3).click(function(){
+					$("html").scrollTop(yhpj)
+				})
+				
+			})
+		})
+
 		return(
 			<div>
 				<h6 className="z_details_path">首页&gt;湖州&gt;<mark>奇景乐园</mark></h6>
@@ -351,59 +389,8 @@ class Details extends Component{
 		)
 	}
 }
-$(function () {
-	//console.log($(".z_details_mainleft_nav").offset().top)
-	var startpos=$(".z_details_mainleft_nav").offset().top;
-	var gmxz=$(".z_goumaixuzhi").offset().top;
-	var jtzn = $(".z_jiaotonghzinan").offset().top;
-	var xqjs=$(".z_xiangqingjieshao").offset().top;
-	var yhpj=$(".z_yonghupingjia").offset().top;
 
-	$(window).scroll(function(){
-		
-		if ($("html").scrollTop() >= startpos ){
-			$(".z_details_mainleft_nav").css({ position: "fixed", left: $(".z_details_mainleft_nav").offset().left,top:0,})
-		}else{
-			$(".z_details_mainleft_nav").css({ position:"static",left:0,top:0})
-		}
-		// 购买须知
-		if ($("html").scrollTop() >= gmxz && $("html").scrollTop() < jtzn){
-			$(".z_details_mainleft_nav").find("li").eq(0).css({background:"#ff7800",color:"#fff"})
-		}else{
-			$(".z_details_mainleft_nav").find("li").eq(0).css({ background: "#fff", color: "#666"})
-		}
-		$(".z_details_mainleft_nav").find("li").eq(0).click(function () {
-			$("html").scrollTop(gmxz)
-		})
-		// 交通指南
-		if ($("html").scrollTop() >= jtzn && $("html").scrollTop() < xqjs){
-			$(".z_details_mainleft_nav").find("li").eq(1).css({background:"#ff7800",color:"#fff"})
-		}else{
-			$(".z_details_mainleft_nav").find("li").eq(1).css({ background: "#fff", color: "#666"})
-		}
-		$(".z_details_mainleft_nav").find("li").eq(1).click(function(){
-			$("html").scrollTop(jtzn)
-		})
-		// 详情介绍
-		if ($("html").scrollTop() >= xqjs && $("html").scrollTop() < yhpj) {
-			$(".z_details_mainleft_nav").find("li").eq(2).css({ background: "#ff7800", color: "#fff" })
-		} else {
-			$(".z_details_mainleft_nav").find("li").eq(2).css({ background: "#fff", color: "#666" })
-		}
-		$(".z_details_mainleft_nav").find("li").eq(2).click(function(){
-			$("html").scrollTop(xqjs)
-		})
-		// 用户评价
-		if ($("html").scrollTop() >= yhpj ) {
-			$(".z_details_mainleft_nav").find("li").eq(3).css({ background: "#ff7800", color: "#fff" })
-		} else {
-			$(".z_details_mainleft_nav").find("li").eq(3).css({ background: "#fff", color: "#666" })
-		}
-		$(".z_details_mainleft_nav").find("li").eq(3).click(function(){
-			$("html").scrollTop(yhpj)
-		})
-		
-	})
-})
+
+
 
 export default Details;
