@@ -2,8 +2,28 @@ import React, { Component } from 'react';
 import '../css/register.css';
 import $ from 'jquery';
 import draw from '../img/draw.png';
-
+import Actions from './redux/Actions'
+import Store from './redux/Store'
 class Login extends Component{
+	constructor(props){
+		super(props)
+		this.state={
+			arr:Store.getState()
+		}
+		this.onchanges=this.onchanges.bind(this)
+		}
+		tap(){
+				Store.dispatch(Actions.login({phone:this.refs.phone.value}))
+				//this.refs.phone.value=''
+				this.props.history.push('/')
+		}
+		onchanges(){
+				this.setState({arr:Store.getState()})
+			}
+		componentDidMount(){
+		//		监听
+			Store.subscribe(this.onchanges)
+		}
 	render(){
 		return(
 			<div>
@@ -18,7 +38,7 @@ class Login extends Component{
 							</span>
 						</div>
 						<div className="z_loginconuse">
-							<input type="text" placeholder="请输入您已注册的手机号" />
+							<input type="text" placeholder="请输入您已注册的手机号" ref='phone'/>
 							<i></i>
 						</div>
 						<div className="z_loginconpas">
@@ -30,7 +50,7 @@ class Login extends Component{
 							<span>发送短信验证码</span>
 						</div>
 						<p className="z_login_err">手机号错误</p>
-						<button className="z_loginbtn">登录</button>
+						<button className="z_loginbtn"  onClick={this.tap.bind(this)}>登录</button>
 					</div>
 				</div>
 			</div>

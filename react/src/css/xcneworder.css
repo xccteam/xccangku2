@@ -1,0 +1,249 @@
+.x_neworder_head{
+	overflow: hidden;
+	height:96px;
+	background: #fff;
+	margin:20px auto;
+	padding:0 20px;
+	
+}
+.x_neworder_headtit{
+	height:26px;
+	font-size: 12px;
+	line-height: 26px;
+	color:#666;
+	padding:8px 0 6px;
+	border-bottom: 1px dashed #666;
+}
+.x_neworder_headtit span{
+	display: inline-block;
+	width:28px;
+	height:28px;
+	background: url(../img/nl_img/icon.png) -146px -168px no-repeat;
+	float: left;
+}
+.x_neworder_headtit h6{
+	display: inline-block;
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+	color: red
+}
+.x_neworder_headtit mark{
+	background:0;
+	color:#ff7800;
+}
+.x_neworder_headsaixuan{
+	height:54px;
+	display: flex;
+	align-items: center;
+}
+.x_neworder_headsaixuan i{
+	color:#666;
+	letter-spacing: 4px;
+}
+.x_neworder_headsaixuan ul{
+	display: inline-block;
+	margin-left: 10px;
+	display: flex;
+}
+.x_neworder_headsaixuan ul li{
+	margin-left: 10px;
+	color:#ff7800;
+	border-radius: 4px;
+	padding:5px;
+}
+.x_neworder_headsaixuan ul li mark{
+	color:#666;
+	background: 0;
+}
+.x_neworder_headsaixuan ul li:hover{
+	color:#fff;
+	background: #ff7800;
+}
+.x_neworder_headsaixuan ul li:hover mark{
+	color:#fff;
+}
+.x_neworder_maincon{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+/* 左边的内容 */
+.x_neworder_maincon_left{
+	width:916px;
+	background: #fff;
+	float: left;
+}
+.x_mainconleft_list{
+	overflow: hidden;
+}
+.x_mainconleft_list a{
+	width:290px;
+	background: #f8fafb;
+	display: block;
+	margin-left: 10px;
+	margin-top: 20px;
+	float: left;
+}
+.x_mainconleft_list_tit{
+	display: block;
+	font-size: 20px;
+	margin:14px 0 8px 10px;
+	font-weight: 100;
+	color:#666;
+}
+.x_mainconleft_list_recomm{
+	font-size: 12px;
+	color:#666;
+	margin-top: 8px;
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 10px;
+}
+.x_mainconleft_list_recomm span{
+	margin-left: 12px;
+}
+.x_mainconleft_list_recomm em{
+	color:#64b052;
+}
+.x_mainconleft_list_dis{
+	padding:8px 10px 20px;
+}
+.x_mainconleft_list_dis p{
+	height:38px;
+	font-size: 12px;
+	overflow: hidden;
+	line-height: 18px;
+	color:#999;
+	
+}
+.x_mainconleft_list_price{
+	display: block;
+	font-size: 18px;
+	color:#ff7800;
+	font-weight: 900;
+	margin-top:10px;
+
+}
+.x_mainconleft_list_price i{
+	font-size: 12px;
+}
+.x_mainconleft_list_price em{
+	color:#999;
+	font-size: 12px;
+	margin:0 8px;
+}
+.x_mainconleft_list_price u{
+	color:#666;
+	text-decoration: line-through;
+	font-size: 12px;
+	font-weight: 100;
+}
+.x_sale_tips{
+	display: inline-block;
+	width:58px;
+	height:16px;
+	border:1px solid #ff7800;
+	border-radius: 3px;
+	float: right;
+	font-size: 12px;
+	font-weight: 100;
+} 
+.x_sale_tips i{
+	display: inline-block;
+	width:20px;
+	height:16px;
+	background: url(../img/nl_img/icon.png) -208px 0 no-repeat;
+	float: left;
+	margin-right: 5px;
+}
+
+/* 右面的内容 */
+.x_neworder_maincon_right{
+	width:262px;
+	float: right;
+}
+.x_neworder_maincon_right .x_maincon_lvyougonglue,.x_maincon_remaixinpin{
+	background: #fff;
+	width:220px;
+	padding:0 21px 10px;
+	overflow: hidden;
+}
+.x_maincon_remaixinpin{
+	margin-top: 20px;
+}
+.x_maincon_lvyougonglue h6,.x_maincon_remaixinpin h6{
+	font-size: 16px;
+	margin:20px 0;
+}
+
+.x_maincon_lvyougonglue ul li{
+	height:20px;
+	line-height: 20px;
+	font-size: 12px;
+	color:#666;
+	margin-bottom: 12px;
+}
+.x_maincon_lvyougonglue ul li i{
+	float: left;
+	display: block;
+	width:46px;
+	height:18px;
+	line-height: 18px;
+	text-align: center;
+	border:1px solid #64b052;
+	border-radius: 4px;
+	color:#64b052;
+}
+.x_maincon_lvyougonglue ul li span{
+	width:160px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float: right;
+	color:#666;
+}
+.x_maincon_lvyougonglue ul li span:hover{
+	color:#ff7800;
+}
+.x_remaixinpin_img{
+	position: relative;
+	cursor: pointer;
+}
+.x_remaixinpin_img>u{
+	display: block;
+	height:24px;
+	background: rgba(7,7,7,.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	color:#fff;
+	text-align: center;
+	text-decoration:none;
+}
+.x_maincon_remaixinpin ul li{
+	margin-bottom: 15px;
+}
+.x_maincon_remaixinpin ul li p{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.x_maincon_remaixinpin ul li p strong{
+	color:#ff7800;
+	margin-right: 8px;
+}
+.x_maincon_remaixinpin ul li p span{
+	color:#666;
+	text-decoration: line-through;
+}
+.x_maincon_remaixinpin ul li p em{
+	display: inline-block;
+	width:60px;
+	background: #ff7800;
+	border-radius: 4px;
+	height:20px;
+	float: right;
+	color:#fff;
+	line-height: 20px;
+	text-align: center;
+}

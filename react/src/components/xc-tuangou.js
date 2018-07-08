@@ -3,6 +3,8 @@ import '../css/xc-tuangou.css'
 import xcjpg1 from '../img/xcimg/xc1 (1).jpg'
 import $ from 'jquery'
 import Mock from 'mockjs'
+
+
 Mock.mock('http://www.xc.com/api',{
 			"user|20":[
 				{
@@ -36,7 +38,8 @@ class Xc_tuangou extends React.Component{
 		return(
 			<div className='xc_tuangouwrap'>
 				<div className='xc_tuangou'>
-				<h1>您在那个团购站购买的</h1>
+				<h1>您在那个团购站购买的</h1> 
+      
 				<div className='xc_logoliebiao'>
 					<div><img src={xcjpg1}/></div>
 					<div><img src={xcjpg1}/></div>

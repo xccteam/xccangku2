@@ -1,8 +1,27 @@
 import React, { Component } from 'react';
 import '../css/register.css';
 import $ from 'jquery';
+import Actions from './redux/Actions'
+import Store from './redux/Store'
 
 class Register extends Component {
+	constructor(props){
+		super(props)
+		this.state={
+			arr:Store.getState()
+		}
+		this.onchanges=this.onchanges.bind(this)
+		}
+		// tap(){
+			
+		// }
+		onchanges(){
+				this.setState({arr:Store.getState()})
+			}
+		componentDidMount(){
+		//		监听
+			Store.subscribe(this.onchanges)
+		}
 	 foo() {
 			var a = Math.floor(Math.random() * 10);
 			var b = Math.floor(Math.random() * 10);
@@ -28,26 +47,32 @@ class Register extends Component {
 				} else if ($("#name").val().length!=3){
 				$("#name").css({ background: "#ffe9dc", border: "1px solid red", color: "black" })
 				$("#name").val("请输入正确的姓名")
+			}else{
+				Store.dispatch(Actions.login({phone:this.refs.phone.value}))
+				//this.refs.phone.value=''
+				this.props.history.push('/nl_puc')
 			}
 		}
 		
 	}
 	render() {
+		
+
 		return (
 			<div className="z_reg">
 				<div className="z_reg_head">
 					<span>
-						<i>1</i>
+						{/* <i>1</i> */}
 						<b>填写注册信息</b>
 						<u className="z_xian"></u>
 					</span>
 					<span>
-						<i>2</i>
-						<b>手机号验证</b>
+						{/* <i>2</i> */}
+						{/* <b>手机号验证</b> */}
 					</span>
 					<span>
-						<i>3</i>
-						<b>注册完成</b>
+						{/* <i>3</i> */}
+						{/* <b>注册完成</b> */}
 					</span>
 				</div>
 				<div className="z_reg_bottom">
@@ -65,7 +90,7 @@ class Register extends Component {
 							</div>
 							<div className="name">
 								<span>姓名:</span>
-								<input type="text" placeholder="请输入您的真实姓名"  id="name"/>
+								<input type="text" placeholder="请输入您的真实姓名"  id="name" ref='phone'/>
 								<i></i>
 							</div>
 							<div className="pass">
@@ -85,7 +110,7 @@ class Register extends Component {
 								<u onClick={this.change.bind(this)}>换一张</u>
 							</div>
 							<div className="z_tishi">请输入正确的验证码</div>
-							<button onClick={this.tap.bind(this)}>下一步,验证</button>
+							<button onClick={this.tap.bind(this)}>确定</button>
 						</form>
 					</div>
 					<div className="first_right">

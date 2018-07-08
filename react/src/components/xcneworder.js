@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import '../css/neworder.css';
+import '../css/xcneworder.css';
 import $ from 'jquery';
-import { Link } from 'react-router';
 import pic1 from '../img/oYYBAFsXf4qAf-80AABiwYG_KCQ199.jpg';
 import pic2 from '../img/ooYBAFszTICAHe9ZAAH5R-UfBKE351.jpg';
-
-
+import Mock from 'mockjs';
+import{ Link } from 'react-router';
+Mock.mock('http://www.baidu1.com/api', {
+		"user|6":[
+			{
+				"ids|+1":0,
+				"name":"@province()",
+				"detail|6": [{ "imgname": "@dataImage('290x163')", "text": "@cparagraph(20,50)", "address": "@city()", "people": "@integer(1,100)", "price": "@integer(120,980)", "priceold|0-1": "@integer(130,1000)", "zhekou": "@integer(1,10)", "dianping": "@integer(0,100)"}] ,
+			}
+		]
+	})
 
 class Neworder extends Component{
 	constructor(props){
@@ -44,22 +52,20 @@ class Neworder extends Component{
 	render(){
 		return(
 			<div>
-				<div className="z_neworder_head">
-					<div className="z_neworder_headtit">
-						<span></span>
-						<h6>本周新品<mark>{this.state.num}</mark>份</h6>
+				<div className="x_neworder_head">
+					<div className="x_neworder_headtit">
+						
+						<h6>城市周边游</h6>
 					</div>
-					<div className="z_neworder_headsaixuan">
-						<i>筛选:</i>
+					<div className="x_neworder_headsaixuan">
+						
 						<ul className="saixuan_list">
-							<li >
-								<span onClick={this.all.bind(this)}>全部<mark>({this.state.num})</mark></span>
-							</li>
+							
 							{
 								this.state.arr.map(function(item,i){
 									return(
 										<li key={i} onClick={this.tap.bind(this,i)}>
-											<span>{item.name.slice(0,2)}<mark>({item.detail.length})</mark></span>
+											<span>{item.name.slice(0,2)}</span>
 										</li>
 									)
 								}.bind(this))
@@ -67,17 +73,17 @@ class Neworder extends Component{
 						</ul>
 					</div>
 				</div>
-				<div className="z_neworder_maincon">
-					<div className="z_neworder_maincon_left">
-						<div className="z_mainconleft_list">
+				<div className="x_neworder_maincon">
+					<div className="x_neworder_maincon_left">
+						<div className="x_mainconleft_list">
 							{
 
 								this.state.arr1.map(function (item,i) {
 										return (
-											<Link to={{ pathname: 'details' }} key={i}>
+											<Link to={{pathname:'/detail',query:{id:1}}} key={i}>
 												<img src={item.imgname} />
-												<strong className="z_mainconleft_list_tit">{item.address.slice(0, item.address.length - 1)} | {item.address.slice(0, item.address.length - 1)}奇境乐园</strong>
-												<div className="z_mainconleft_list_recomm">
+												<strong className="x_mainconleft_list_tit">{item.address.slice(0, item.address.length - 1)} | {item.address.slice(0, item.address.length - 1)}奇境乐园</strong>
+												<div className="x_mainconleft_list_recomm">
 													<span>
 														<em>{item.people}</em>
 														人购买
@@ -87,14 +93,14 @@ class Neworder extends Component{
 														好评
 									</span>
 												</div>
-												<div className="z_mainconleft_list_dis">
+												<div className="x_mainconleft_list_dis">
 													<p>{item.text}</p>
-													<span className="z_mainconleft_list_price">
+													<span className="x_mainconleft_list_price">
 														<i>￥</i>
 														{item.price}
 										<em>起/份</em>
 														<u>门市价:{item.oldprice}</u>
-														<span className="z_sale_tips">
+														<span className="x_sale_tips">
 															<i></i>
 															{item.zhekou}折
 										</span>
@@ -108,8 +114,8 @@ class Neworder extends Component{
 							
 						</div>
 					</div>
-					<div className="z_neworder_maincon_right">
-						<div className="z_maincon_lvyougonglue">
+					<div className="x_neworder_maincon_right">
+						<div className="x_maincon_lvyougonglue">
 							<h6>旅游攻略</h6>
 							<ul>
 								<li>
@@ -174,12 +180,12 @@ class Neworder extends Component{
 								</li>
 							</ul>
 						</div>
-						<div className="z_maincon_remaixinpin">
+						<div className="x_maincon_remaixinpin">
 							<h6>热卖新品</h6>
 							<ul>
 								<li>
 									<a href="">
-										<div className="z_remaixinpin_img">
+										<div className="x_remaixinpin_img">
 											<img src={pic1} alt=""/>
 											<u>三道堰水乐园</u>
 										</div>
@@ -190,58 +196,10 @@ class Neworder extends Component{
 										</p>
 									</a>
 								</li>
-								<li>
-									<a href="">
-										<div className="z_remaixinpin_img">
-											<img src={pic2} alt=""/>
-											<u>肇庆宋隆小镇熹云文化别苑</u>
-										</div>
-										<p>
-											<strong>￥1380</strong>
-											<span>门市价:￥2000</span>
-											<em>立即购买</em>
-										</p>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div className="z_remaixinpin_img">
-											<img src={pic1} alt="" />
-											<u>上水.城市水公园</u>
-										</div>
-										<p>
-											<strong>￥56</strong>
-											<span>门市价:￥58</span>
-											<em>立即购买</em>
-										</p>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div className="z_remaixinpin_img">
-											<img src={pic2} alt="" />
-											<u>炭河千古情</u>
-										</div>
-										<p>
-											<strong>￥160</strong>
-											<u>门市价:￥200</u>
-											<em>立即购买</em>
-										</p>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div className="z_remaixinpin_img">
-											<img src={pic1} alt="" />
-											<u>会稽山峡洞漂流</u>
-										</div>
-										<p>
-											<strong>￥55</strong>
-											<span>门市价:￥60</span>
-											<em>立即购买</em>
-										</p>
-									</a>
-								</li>
+								
+								
+								
+								
 								
 							</ul>
 						</div>
@@ -255,7 +213,7 @@ class Neworder extends Component{
 		var oldarr=[];
 		$.ajax({
 			type: 'post',
-			url: 'http://www.baidu.com/api',
+			url: 'http://www.baidu1.com/api',
 			dataType: 'json',
 			success: function (data) {
 				console.log(data.user)
