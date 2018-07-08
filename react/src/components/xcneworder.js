@@ -5,7 +5,7 @@ import pic1 from '../img/oYYBAFsXf4qAf-80AABiwYG_KCQ199.jpg';
 import pic2 from '../img/ooYBAFszTICAHe9ZAAH5R-UfBKE351.jpg';
 import Mock from 'mockjs';
 import{ Link } from 'react-router';
-Mock.mock('http://www.baidu.com/api', {
+Mock.mock('http://www.baidu1.com/api', {
 		"user|6":[
 			{
 				"ids|+1":0,
@@ -213,7 +213,7 @@ class Neworder extends Component{
 		var oldarr=[];
 		$.ajax({
 			type: 'post',
-			url: 'http://www.baidu.com/api',
+			url: 'http://www.baidu1.com/api',
 			dataType: 'json',
 			success: function (data) {
 				console.log(data.user)
