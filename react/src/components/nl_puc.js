@@ -11,17 +11,9 @@ import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
 import{ Link } from 'react-router';
-<<<<<<< HEAD
 
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import tuangou from './xc-tuangou';
-=======
-import Xc_shouye_lunbotu from './xc-shouye-lunbo';
-import Xc_tuangou from './xc-tuangou';
-import Nl_funny from './nl_funny';
-import Neworder from './neworder';
-
->>>>>>> a53574d97a4ecc958201018273274495ec4f13ba
 
 class Nl_puc extends Component {
  

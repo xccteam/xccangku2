@@ -149,7 +149,7 @@ header .n_icon{
   border: 1px solid #ddd;
   z-index: 20;
   position: absolute;
-  top:41px;
+  top:-50px;
   right: 106px;
 }
 .n_viewelist li{
