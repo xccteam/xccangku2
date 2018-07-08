@@ -12,7 +12,14 @@ class Xc_shouye_lunbotu extends React.Component{
 			<div className='xc_shouye_lunbo'>
 				<div className='xc_lunbo'>
 					<div>
-						<div>hhh</div>
+						<div>
+							<div>img</div> 
+							<div >
+								111
+								
+							</div>
+						</div>
+
 						<div>hhh</div>
 						<div>hhh</div>
 						<div>hhh</div>
