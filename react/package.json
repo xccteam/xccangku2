@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "mint-ui": "^2.2.13",
     "mock": "^0.1.1",
     "mockjs": "^1.0.1-beta3",
     "react-scripts": "1.1.4",

@@ -1,4 +1,4 @@
-//首页轮播组件
+
 import React from 'react';
 import '../css/xc-shouye-lunbo.css'
 import '../css/xc-shouye-lunbo.scss'
@@ -20,6 +20,7 @@ class Xc_shouye_lunbotu extends React.Component{
 
 	componentDidMount(){
 		$(function(){
+			clearInterval(t);
 			var t =0;
 			var n=0;
 			var  count=0;
@@ -64,6 +65,8 @@ class Xc_shouye_lunbotu extends React.Component{
 		}
 	render(){
 		return(
+
+			
 			
 			<div className='xc_shouye_lunbo'>
 				<div className='xc_lunbo'>

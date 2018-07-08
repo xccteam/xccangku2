@@ -21,6 +21,12 @@ const Actions={
 			type:'login',
 			text:a
 		}
+	},
+	register(a){
+		return{
+			type:'register',
+			text:a
+		}
 	}
 }
 
