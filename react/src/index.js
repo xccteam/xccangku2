@@ -27,10 +27,8 @@ ReactDOM.render(<Router history={hashHistory}>
 				<Route path='/nl_funny' component={Nl_funny}></Route>
 				<Route path='/neworder' component={Neworder}></Route>
 			</Route>
-
 			<Route path='/phone' component={Phone}></Route>
-			
-			
 		</Route>
-</Router>, document.getElementById("root"))
+</Router>,
+document.getElementById("root"))
 registerServiceWorker();
