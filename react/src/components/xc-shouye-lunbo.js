@@ -2,6 +2,7 @@
 import React from 'react';
 import '../css/xc-shouye-lunbo.css'
 import '../css/xc-shouye-lunbo.scss'
+import zhoubianjingqu from '../img/xcimg/xc1.jpg';
 class Xc_shouye_lunbotu extends React.Component{
 	constructor(props){
 		super(props)
@@ -31,7 +32,7 @@ class Xc_shouye_lunbotu extends React.Component{
 					<div>right</div>
 				</div>
 				<div className='xc_chengshizhoubiaoyou' >1</div>
-				<div className='xc_zbjq'>222</div>
+				<div className='xc_zbjq'><img src={zhoubianjingqu}/></div>
 				<div className='xc_jingxuanzhuti'>1</div>
 				
 			
