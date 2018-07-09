@@ -3,7 +3,9 @@ import '../css/register.css';
 import $ from 'jquery';
 import draw from '../img/draw.png';
 import Actions from './redux/Actions'
-import Store from './redux/Store'
+import Store from './redux/Store';
+import{ Link } from 'react-router';
+
 class Login extends Component{
 	constructor(props){
 		super(props)
@@ -33,7 +35,7 @@ class Login extends Component{
 						<div className="z_logincon_right_tit">
 							<h6>用户登录</h6>
 							<span>
-								<a href="">免费注册</a>|
+								<Link to={{ pathname: '/register' }}>免费注册</Link>
 								<a href="">忘记密码</a>
 							</span>
 						</div>
@@ -42,7 +44,7 @@ class Login extends Component{
 							<i></i>
 						</div>
 						<div className="z_loginconpas">
-							<input type="text" placeholder="请输入密码" />
+							<input type="password" placeholder="请输入密码" />
 							<i></i>
 						</div>
 						<div className="z_loginconts">

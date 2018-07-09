@@ -3,6 +3,7 @@ import '../css/register.css';
 import $ from 'jquery';
 import Actions from './redux/Actions'
 import Store from './redux/Store'
+import { Link } from 'react-router';
 
 class Register extends Component {
 	constructor(props){
@@ -80,7 +81,7 @@ class Register extends Component {
 						<div className="frist_tit">
 							<h6>新用户注册</h6>
 							<i>已有账号？</i>
-							<a href="">立即登录&gt;&gt;</a>
+							<Link to={{ pathname: '/login' }}>立即登录&gt;&gt;</Link>
 						</div>
 						<form>
 							<div className="phone">
@@ -95,12 +96,12 @@ class Register extends Component {
 							</div>
 							<div className="pass">
 								<span>密码:</span>
-								<input type="text" placeholder="请输入6-20位字母和数字的组合" id="pass"/>
+								<input type="password" placeholder="请输入6-20位字母和数字的组合" id="pass"/>
 								<i></i>
 							</div>
 							<div className="pass1">
 								<span>确认密码:</span>
-								<input type="text" placeholder="请再次输入您的密码" id="pass1"/>
+								<input type="password" placeholder="请再次输入您的密码" id="pass1"/>
 								<i></i>
 							</div>
 							<div className="yzm">

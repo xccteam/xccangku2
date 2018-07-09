@@ -243,7 +243,7 @@ header .n_icon{
 /* 导航 */
 nav{
   position: relative;
-  
+ 
 }
 
 .n_menuleft{
@@ -268,9 +268,12 @@ nav{
   left: 280px;
   overflow: hidden;
 }
-
+.n_menu ul{
+  overflow: hidden;
+}
 .n_menu ul li{  
   float: left;
+  height:42px;
 }
 
 .n_menu ul .n_mainmenu{
@@ -286,7 +289,6 @@ nav{
 
 .n_mainmenu a:hover{
   color: #ff7800;
-  border-bottom: 4px solid  #ff7800; 
 }
 
 .n_hdindex{

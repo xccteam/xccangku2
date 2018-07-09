@@ -93,7 +93,7 @@ class Neworder extends Component{
 														<i>￥</i>
 														{item.price}
 										<em>起/份</em>
-														<u>门市价:{item.oldprice}</u>
+														<u>门市价:{item.priceold}</u>
 														<span className="z_sale_tips">
 															<i></i>
 															{item.zhekou}折

@@ -11,19 +11,12 @@ import ghs from '../img/nl_img/ghs.png';
 import $ from 'jquery';
 import '../css/nl_puc.css';
 import{ Link } from 'react-router';
-<<<<<<< HEAD
-
-import Xc_shouye_lunbotu from './xc-shouye-lunbo';
-import tuangou from './xc-tuangou';
-
-=======
 import Xc_shouye_lunbotu from './xc-shouye-lunbo';
 import Xc_tuangou from './xc-tuangou';
 import Nl_funny from './nl_funny';
 import Neworder from './neworder';
 import Actions from './redux/Actions'
 import Store from './redux/Store'
->>>>>>> 9ea34a29858d8fec9b21a971cd1854e0c330cb43
 class Nl_puc extends Component {
   constructor(props){
 		super(props)
@@ -57,8 +50,8 @@ class Nl_puc extends Component {
  
   render() {
 let xcusermessage;
-console.log(this.state.str);//[]
-console.log(this.state.str111);
+//console.log(this.state.str);//[]
+//console.log(this.state.str111);
 if(this.state.str==undefined){
   xcusermessage=(
     <a>
@@ -240,8 +233,9 @@ if(this.state.str==undefined){
                   <li  className="n_mainmenu">
                     <Link to={{ pathname: '/phone' }}>手机版下载</Link>
                   </li>
+                   <span className="n_hdindex"></span> 
                 </ul>
-                {/* <span className="n_hdindex"></span> */}
+               
               </div>
              
             </nav>
@@ -391,10 +385,29 @@ if(this.state.str==undefined){
   
 }
 $(function(){
-  $(".n_mainmenu").click(function(){
+  $(".n_mainmenu").hover(function(){
+    //console.log($(this).innerWidth())
     // console.log("1")
     $(this).find("a").css("color","#ff7800").end().siblings().find("a").css("color","#525b5f")
+
+    var width1=$(this).find("a").width();
+    // console.log($(".n_menu").find("ul").offset().left)
+    // console.log($(this).find("a").offset().left)
+    var dis=$(this).find("a").offset().left-$(".n_menu").find("ul").offset().left
+   //console.log(dis)
+   // $(".n_hdindex").css("width",width1)
+    $(".n_hdindex").animate({
+      left:dis,
+      width:width1
+    },200)
   })
+  $(".n_mainmenu").click(function(){
+    $(this).find("a").css("color", "#ff7800").end().siblings().find("a").css("color", "#525b5f")
+  })
+
+ 
+  
+  
   let flag=true;
   $(".n_ghsf").click(function(){
      
@@ -419,7 +432,6 @@ $(function(){
       flag=true;
     }
   })
-<<<<<<< HEAD
   // 固定后侧导航
   $(".n_fixedrnav>li").hover(function(){
     // console.log($(this))
@@ -432,10 +444,6 @@ $(function(){
       $("html,body").animate({scrollTop:0},300);
       return false;
   })
-=======
-  
-  
->>>>>>> 9ea34a29858d8fec9b21a971cd1854e0c330cb43
 })
 
 
