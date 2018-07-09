@@ -1,0 +1,593 @@
+
+#n_headwrap{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+ #head{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 100px;
+    margin-bottom: 20px;
+ }
+
+  .n_headtop1{
+    height: 38px;
+    background:#fff;
+    font-size: 12px;
+    line-height: 38px;
+    position: relative; 
+  }
+  .n_topl{
+    float: left;
+    color: #666;
+  }
+  .n_rentsy{
+    display: inline-block;
+    line-height: 37px;
+    background: url(../img/nl_img/icon-return.png) left center no-repeat;
+    padding-left: 25px;
+  }
+    #n_headwrap .n_icon{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  .n_topr{
+    float: right;
+    color: #666;
+    position: relative;
+  }
+  
+  .n_topr span{
+    padding: 0 13px;
+    border-right: 1px solid #ddd;
+  }
+  .n_topr span:nth-of-type(3){
+    border-right: none;
+    width: 80px;
+    display: inline-block;
+  }
+  
+  .n_login a{
+    color: #ff7800;
+  }
+  .n_login em{
+      font-style: normal;
+      color:#666;
+  }
+  .n_clock{
+    background: url(../img/nl_img/icon.png) -14px 0 no-repeat;
+    height: 15px;
+    width: 15px;
+    top: -1px;
+    margin-right: 5px;
+  }
+  
+  
+  .n_phone{
+    background: url(../img/nl_img/icon.png) -32px 0 no-repeat;
+    height: 15px;
+    width: 11px;
+    margin-right: 5px;
+  }
+/* 最近浏览 */
+.n_viewelist1{
+    width: 298px;
+    max-height: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 20;
+    position: absolute;
+    top:-50px;
+    right: 106px;
+  }
+  .n_viewelist1 li{
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .n_viewelist1 .n_nread{
+    text-align: center;
+  } 
+  /* logo部分 */
+.n_logoyl{
+    background: #fff;
+    
+  }
+.n_logoyl .log{
+    float: left;
+    margin-top: 20px;
+}
+.n_logoyl .log img{
+    width:230px;
+}
+.n_paysteep{
+    float: right;
+    width: 390px;
+    border-top: #59b109 4px solid;
+    color: #59b109;
+    margin-top:40px;
+}
+.n_paysteep li{
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin-top:-6px;
+    font-size: 12px;
+}
+
+.n_paysteep li:nth-of-type(1) em{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -4px auto 10px;
+    background: url(../img/nl_img/pay_new.png) 0 0 no-repeat;
+    
+}.n_paysteep li:nth-of-type(2) em{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -4px auto 10px;
+    background: url(../img/nl_img/pay_new.png) 0 0 no-repeat;
+    
+}
+.n_lastteep em{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -4px auto 10px;
+    background: url(../img/nl_img/pay_new.png) 0 -19px no-repeat;
+}
+.n_lastclo{
+    color: #666;
+}
+.top_line{
+    border-top: 4px #999 solid;
+    font-size: 1px;
+    width: 57px;
+    display: inherit;
+    margin: -20px 0 0 0;
+    float: right;
+}
+/* 内容区域 */
+.bookBox{
+    background: #fff;
+    padding: 20px 0 10px;
+}
+.n_bookModel{
+    margin-bottom: 20px;
+}
+.n_current{
+    height: 324px;
+}
+.n_bmodelTit{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #dee1e5;
+}
+.n_current .n_bmodelTit span{
+    color: #fff;
+    background: #ff7800;
+    
+}
+.n_bmodelTit span{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 0 4px 4px 0;
+    font-size: 38px;
+    color: #b5bac5;
+    background: #dee1e5;
+}
+.n_bmodelTit p{
+    float: left;
+    color: #333;
+    font-size: 20px;
+    margin-left: 16px;
+}
+.n_bmBox{
+    width: 92%;
+    height: 270px;
+    margin: 0 auto;
+}
+.n_bookpageinfo{
+    margin: 30px auto 20px;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.n_bookpageinfo h4{
+    min-height: 40px;
+    line-height: 40px;
+    padding-right: 130px;
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: 50px;
+}
+.n_bookpageinfo a{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px  solid #dee1e5;
+    border-radius: 2px;
+    background: #fff;
+
+}  
+.n_bookpageinfo a i{
+    float: left;
+    margin: 12px 7px 0 14px;
+    background: url(../img/nl_img/pay_new.png) 0 -182px no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.n_discountInfo{
+    margin-left: 50px;
+    width: 92%;
+    height: 40px;
+}
+.n_discountInfo span{
+    float: left;
+}
+.n_discountInfo span:nth-of-type(1){
+    font-size: 16px;
+    color: #666;
+    height:34px;
+    line-height: 34px;
+    display: block;
+}
+.n_discountInfo span:nth-of-type(2){
+    color: #2b9bd6;
+    padding-left: 0;
+    width: auto;
+    height: 16px;
+    line-height: 16px;
+    margin: 9px 4px;
+    font-size: 12px;
+    border: 1px solid #2b9bd6;
+    border-radius: 2px;
+    cursor: default;
+    padding-right: 4px;
+}
+.n_discountInfo span:nth-of-type(2) em{
+    display: inline-block;
+    padding: 0 3px;
+    margin-right: 4px;
+    font-weight: normal;
+    color: #fff;
+    background: #2b9bd6;
+    font-style: normal;
+}
+.n_bookadd .n_bookbt{
+    width: 100%;
+    height: 40px;
+    background: #f6f8f9;
+   
+}
+.n_bookadd .n_bookbt li{
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+.n_wl{
+    padding-left: 35px;
+    width: 339px;
+    text-align: left;
+}
+
+.n_booktit li:nth-of-type(2){
+    width: 70px;
+}
+.n_booktit li:nth-of-type(3){
+    width: 80px;
+}
+.n_booktit li:nth-of-type(4){
+    width: 320px;
+}
+.n_booktit li:nth-of-type(5){
+    width: 220px;
+}
+.n_shuju li{
+    float: left;
+    width: 100%;
+    height: 109px;
+    margin-top: 22px;
+    color: #666
+}
+.n_shuju li:nth-of-type(1){
+    width: 354px;
+    text-align: left;
+    margin-left: 20px;
+}
+.n_wlxx{
+    line-height: 22px;
+}
+.n_wlxx p{
+    font-size: 16px;
+    color: #333;
+}
+.n_wlxx em{
+    font-size: 14px;
+    color: #999;
+}
+.n_tgxz{
+    background: url(../img/nl_img/explain.png) no-repeat left center;
+    padding-left: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    margin-top:40px;
+}
+.n_tgxz span{
+    color: #ff7800;
+}
+.n_selectBtn{
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #dee1e5;
+    margin-top: 4px;
+    border-radius: 3px;
+    border-color: #dee1e5;
+    background: url(../img/nl_img/selectGreyIcon.png) no-repeat center #dee1e5;
+    margin: 50% auto;
+}
+.n_clear{
+    text-align: center;
+    margin: 50% auto;
+}
+.n_num{
+    margin: 20% auto;
+    margin-left: 60px;
+}
+.n_num span{
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #ff7800;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #c6ccd1;
+    cursor: pointer;
+}
+.n_count{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+    border: 1px solid #c6ccd1;
+    border-left: none;
+    border-right: none;
+    background: #f5f6f7;
+}
+/* 支付 */
+.n_gotopay{
+    height: 120px;
+    background: #f3f5f6;
+}
+.n_payBox{
+    width: 1204px;
+    height: 80px;
+    margin: 20px auto;
+    background: #fffff4;
+    border: 3px solid #ff7800;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.n_back{
+    float: left;
+    height: 74px;
+    line-height: 74px;
+    padding: 0 10px 0 30px;
+    color: #666;
+    font-size: 12px;
+}
+.n_total-price{
+    float: right;
+    margin:20px;
+}
+.n_price{
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+    line-height: 24px;
+}
+#final-price{
+    font-size: 30px;
+    color: #ff4500;
+    font-weight: bold;
+}
+.n_payBtn{
+    float: right;
+    width: 220px;
+    height: 60px;
+    line-height: 38px;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 6px;
+    background: #ff7800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.n_payBtn span{
+    display: block;
+    width: 100%;
+    line-height: 17px;
+    text-align: center;
+    font-size: 12px;
+}
+/* 套餐须知 */
+#n_explainbox{
+    width:1204px;
+    height: 300px;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.n_explaincont{
+    width: 92%;
+    margin: 0 auto 20px;
+    
+}
+.n_explaincont h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #dee1e5;
+    padding-top:20px;
+}
+.n_explaintext{
+    margin-top: 30px;
+    color: #666;
+}
+.n_tcxq h5{
+    padding: 10px 0;
+}
+.n_explaintext ul li{
+    font-size: 14px;
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.n_tbsm h5{
+    padding: 10px 0;
+}
+/* 关于footer部分 */
+#n_footwarp{
+    width: 100%;
+    background: #fff;
+  }
+  footer{
+    background: #fff;   
+    padding-bottom: 50px;
+  }
+  
+  
+  .n_ftop{
+    padding-top:30px;
+    height: 180px;
+  }
+  
+  .n_ftop dl{
+    display: block;
+    float: left;
+    
+  }
+  .n_ftop dt{
+    display: block;
+    font-size: 16px;
+    color: #666;
+  }
+  .n_ftop dd{
+    display: block;
+    padding-top: 10px;
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .n_guanyu{
+    padding-right:70px;
+    border-right:1px solid #f3f5f6;
+  }
+  
+  .n_bzzx{
+    padding:0 70px;
+    border-right:1px solid #f3f5f6;
+  }
+  .n_kffw{
+    padding:0 70px;
+  }
+  .n_kffw dd b{
+    color: #000;
+    font-weight: 900;
+  }
+  .n_code{
+    float: right;
+  }
+  .n_code li{
+    float: left;
+    margin-left: 20px;
+    color: #666;
+    text-align: center;
+  }
+  .n_code li img{
+    width: 114px;
+    height: 114px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  /* 友情链接 */
+  .n_links{
+    
+    text-align: left;
+    font-size: 12px;
+  }
+  .n_links strong{
+    font-style: normal;
+    font-weight: 400;
+  }
+  .n_links a{
+    margin: 0 3px;
+    color: #999999;
+  
+  }
+  
+  /* 诚信认证 */
+  .n_trust{
+    padding: 20px 0;
+    overflow: hidden;
+    margin-left: 32%;
+  }
+  .n_trust img{
+    width: 100px;
+    height: 36px;
+    float: left;
+    margin: 0 3px;
+    vertical-align: top;
+  }
+  
+  .n_license{
+    font-size: 12px;
+    color: #999;
+  }
+  .n_license li{
+    text-align: center;
+  }
+  .n_ag{
+    margin-left: 42%;
+  }
+  .n_ag p{
+    float: left;
+  }
+  
+  .n_ag img{
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+  }
